@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 CSV_PATH = DATA / "cea_additions.csv"
 LOG_PATH = DATA / "update_log.json"
-REPORTS_URL = "https://npp.gov.in/publishedReports"
+REPORTS_URL = "https://cea.nic.in/reports/external/daily-generation?lang=en"
 HEADERS = {"User-Agent": "Aniketverse-PowerStations-Monitor/1.0 (public research dashboard)"}
 TIMEOUT = 45
 
@@ -84,30 +84,56 @@ def industrial(name, owner):
 
 def fetch_report_links(html):
     soup = BeautifulSoup(html, "html.parser")
-    targets = [
-        ("daily_stationwise", re.compile(r"02\s*Region Wise.*Station Wise.*Unit Wise Generation Report", re.I | re.S)),
-        ("monthly_stationwise", re.compile(r"16\s*Region wise State wise and Station wise Detail", re.I | re.S)),
-        ("installed_capacity", re.compile(r"01\s*All India Installed Capacity of Power Stations", re.I | re.S)),
-    ]
-    found = {}
-    for label, pattern in targets:
-        for node in soup.find_all(string=True):
-            parent = node.parent
-            for _ in range(8):
-                if parent is None: break
-                parent_text = parent.get_text(" ", strip=True)
-                if pattern.search(parent_text):
-                    links = parent.find_all("a", href=True)
-                    xls = [a for a in links if re.search(r"\b(xls|excel|xlsx)\b", a.get_text(" ", strip=True), re.I)
-                           or re.search(r"\.(xlsx?|xlsm)(?:\?|$)", a["href"], re.I)]
-                    if xls:
-                        chosen = next((a for a in xls if re.search(r"\bxls", a.get_text(" ", strip=True), re.I)), xls[-1])
-                        found[label] = urljoin(REPORTS_URL, chosen["href"])
-                        break
-                parent = parent.parent
-            if label in found: break
-    return found
 
+    targets = {
+        "daily_stationwise": re.compile(
+            r"02\s*Region\s*Wise.*?Station\s*Wise.*?Unit\s*Wise\s*Generation\s*Report",
+            re.I | re.S
+        ),
+        "monthly_stationwise": re.compile(
+            r"16\s*Region\s*wise\s*State\s*wise\s*and\s*Station\s*wise\s*Detail",
+            re.I | re.S
+        ),
+        "installed_capacity": re.compile(
+            r"01\s*All\s*India\s*Installed\s*Capacity\s*of\s*Power\s*Stations",
+            re.I | re.S
+        ),
+    }
+
+    found = {}
+
+    for anchor in soup.find_all("a", href=True):
+        link_text = " ".join([
+            anchor.get_text(" ", strip=True),
+            anchor.get("title", ""),
+            anchor.get("aria-label", "")
+        ])
+
+        href = anchor["href"]
+
+        is_excel = (
+            re.search(r"\b(xls|excel|xlsx)\b", link_text, re.I)
+            or re.search(r"\.(xlsx?|xlsm)(?:\?|$)", href, re.I)
+        )
+
+        if not is_excel:
+            continue
+
+        parent = anchor
+        for _ in range(15):
+            if parent is None:
+                break
+
+            context = parent.get_text(" ", strip=True)
+
+            for label, pattern in targets.items():
+                if label not in found and pattern.search(context):
+                    found[label] = urljoin(REPORTS_URL, href)
+
+            parent = parent.parent
+
+    return found
+  
 def find_col(headers, patterns):
     for i, h in enumerate(headers):
         if any(re.search(p, clean(h), re.I) for p in patterns): return i
