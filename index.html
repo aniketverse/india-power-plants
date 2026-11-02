@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Aniketverse | India Electricity Power Stations</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+:root{--navy:#102345;--blue:#2459c4;--ink:#172238;--muted:#68758a;--bg:#f3f6fb;--line:#e1e7f0;--panel:#fff;--gold:#f5b942}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.48 Inter,system-ui,-apple-system,Segoe UI,Arial}
+header{background:linear-gradient(120deg,#0c1c37,#234d91);color:#fff;padding:25px max(18px,calc((100vw - 1440px)/2))}
+h1{font-size:clamp(24px,4vw,35px);margin:0 0 5px;line-height:1.15}header p{margin:0;color:#d8e4ff}
+main{max-width:1440px;margin:18px auto;padding:0 15px 36px}
+.notice{border:1px solid #f0d89a;background:#fff7e4;color:#6c4b00;padding:12px 14px;border-radius:12px;margin-bottom:13px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.toolbar a,.toolbar button{border:0;border-radius:9px;padding:10px 13px;font:600 13px inherit;text-decoration:none;cursor:pointer;background:var(--blue);color:#fff}.toolbar a.alt,.toolbar button.alt{background:#e9eef8;color:#23344f}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 3px 12px #1a315308}.card{padding:14px}.label{font-size:12px;color:var(--muted)}.value{font-size:25px;font-weight:760;letter-spacing:-.5px;margin:3px 0}.sub{font-size:11px;color:var(--muted)}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:13px;margin-top:13px;align-items:start}.panel{padding:15px}.panel h2{font-size:17px;margin:0 0 3px}.hint{font-size:12px;color:var(--muted);margin:0 0 11px}
+#map{height:620px;border-radius:11px;border:1px solid var(--line);z-index:1}.maptools{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0}.maptools select,.filters input,.filters select{border:1px solid var(--line);border-radius:8px;background:#fff;padding:9px 10px;font:inherit;color:var(--ink)}
+.maplegend{display:flex;flex-wrap:wrap;gap:9px;font-size:11px;color:var(--muted);margin:8px 0}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.sidebar{display:flex;flex-direction:column;gap:12px}.state-list{max-height:430px;overflow:auto}.state-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #edf0f5;font-size:12px}.state-name{flex:1}.state-num{font-weight:700;font-variant-numeric:tabular-nums}.statebar{height:5px;background:#edf1f7;border-radius:8px;overflow:hidden;width:70px}.statebar i{display:block;height:100%;background:#2c65d5}
+.fuel-list{display:flex;flex-wrap:wrap;gap:6px}.chip{background:#edf2fb;border:1px solid #e0e7f3;padding:5px 8px;border-radius:99px;font-size:11px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.filters input{flex:1;min-width:200px}.filters select{min-width:145px}
+.tablewrap{overflow:auto;max-height:600px;border:1px solid var(--line);border-radius:9px}table{border-collapse:collapse;width:100%;min-width:920px;background:white}th,td{padding:9px 10px;border-bottom:1px solid #e9edf3;text-align:left;font-size:12px}th{position:sticky;top:0;background:#f5f8fc;color:#59667a;z-index:2;white-space:nowrap;cursor:pointer}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tbody tr:hover{background:#f7faff}.tag{background:#edf2ff;color:#2a4f99;padding:3px 7px;border-radius:99px;font-size:10px;white-space:nowrap}
+.status{font-size:12px;color:var(--muted);margin:8px 0}.source{font-size:11px;color:var(--muted)}.source a{color:#2459c4}
+#loadError{display:none;background:#fff0ee;color:#8c2e22;border:1px solid #f2c7c2;border-radius:9px;padding:10px;margin:8px 0}
+@media(max-width:1000px){.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr}.state-list{max-height:300px}#map{height:520px}}
+@media(max-width:650px){.kpis{grid-template-columns:1fr 1fr}.sidebar{display:flex}.panel{padding:12px}#map{height:440px}}
+</style></head>
+<body>
+<header><h1>India Electricity Power Stations</h1><p>Official-source monitoring · Utility generating stations · State distribution · Political map</p></header>
+<main>
+<div class="notice"><b>Scope:</b> Electricity-generating stations only. Industrial establishments and their in-house generation records (including cement, steel, mining, metals, chemicals, refining, fertiliser, paper, sugar, textiles, manufacturing, ports and similar industrial sites) are excluded using a strict plant-name AND owner-name screening rule. No industrial-name exception is allowed. The underlying WRI GPPD v1.3.0 source is historical and no longer maintained, so this is a cleaned historical inventory—not a certified current register. Cross-check current plant layers against the official ISRO–NITI Energy Map and CEA generator registry. Rooftop/distributed solar is excluded.</div>
+<div class="toolbar">
+<a href="https://vedas.sac.gov.in/energymap/view/powergis.jsp" target="_blank" rel="noopener">Open live ISRO–NITI Energy Map ↗</a>
+<a class="alt" href="https://www.listbase.org/en/environment/in-power-plants/" target="_blank" rel="noopener">Open full source dataset ↗</a>
+<a class="alt" href="https://github.com/wri/global-power-plant-database" target="_blank" rel="noopener">WRI methodology & licence ↗</a>
+<a class="alt" href="data/update_log.json" target="_blank" rel="noopener">View automatic update log ↗</a>
+<a class="alt" href="https://egen.cea.gov.in/genreport.aspx" target="_blank" rel="noopener">CEA generator registry ↗</a>
+<button id="downloadCsv" class="alt">Download loaded inventory CSV</button>
+</div>
+<section class="kpis" id="kpis">
+<div class="card"><div class="label">Plant records</div><div class="value" id="total">Loading…</div><div class="sub">Source inventory records</div></div>
+<div class="card"><div class="label">Mapped plants</div><div class="value" id="mapped">—</div><div class="sub">Records with usable coordinates</div></div>
+<div class="card"><div class="label">Fuel categories</div><div class="value" id="fuels">—</div><div class="sub">Primary fuel types in dataset</div></div>
+<div class="card"><div class="label">States / UTs mapped</div><div class="value" id="states">—</div><div class="sub">Political boundary match</div></div>
+</section>
+<div class="layout">
+<div>
+<section class="panel">
+<h2>Power plant locations across India</h2><p class="hint">Political state boundaries with plant markers. Select a marker for plant name, fuel, capacity and owner. Use fuel and status filters to declutter.</p>
+<div class="maptools">
+<select id="mapFuel"><option value="">All fuels</option></select>
+<select id="mapState"><option value="">All states / UTs</option></select>
+<select id="mapStatus"><option value="all">All records</option><option value="mapped">Mapped only</option><option value="unmapped">No coordinates</option></select>
+</div>
+<div id="map"></div>
+<div class="maplegend" id="legend"></div>
+<div id="loadError"></div>
+<div class="status" id="loadStatus">Loading plant inventory and state boundaries. An internet connection is required.</div>
+</section>
+<section class="panel" style="margin-top:13px">
+<h2>Complete plant inventory</h2><p class="hint">Search and filter all retained electricity-generation station records after strict industrial-sector exclusion. Click column headings to sort. State is assigned from coordinates where available.</p>
+<div class="filters"><input id="search" placeholder="Search plant name, owner, fuel, state…"><select id="fuelFilter"><option value="">All fuel types</option></select><select id="stateFilter"><option value="">All states / UTs</option></select><select id="coordFilter"><option value="">All coordinate status</option><option value="yes">Coordinates available</option><option value="no">Coordinates missing</option></select></div>
+<div class="tablewrap"><table><thead><tr>
+<th data-k="name">Plant name</th><th data-k="state">State / UT</th><th data-k="fuel">Primary fuel</th><th data-k="capacity" class="num">Capacity MW</th><th data-k="owner">Owner</th><th data-k="year" class="num">Commissioning year</th><th data-k="lat" class="num">Latitude</th><th data-k="lon" class="num">Longitude</th>
+</tr></thead><tbody id="rows"></tbody></table></div><div class="status" id="tableStatus"></div>
+</section>
+</div>
+<aside class="sidebar">
+<section class="panel"><h2>State-wise plant count</h2><p class="hint">Descending order · Counted from geolocated records in this inventory.</p><div id="stateCounts" class="state-list">Waiting for data…</div></section>
+<section class="panel"><h2>Fuel-wise inventory</h2><p class="hint">Primary fuel classification.</p><div id="fuelCounts" class="fuel-list"></div></section>
+<section class="panel"><h2>Data notes</h2><div class="source">
+<ul style="padding-left:17px;margin:7px 0">
+<li>WRI GPPD v1.3.0 is historical and no longer maintained.</li>
+<li>Generation history in the source is mainly 2013–2019; it is not FY 2024–25 generation.</li>
+<li>Missing coordinates prevent state assignment and map display.</li>
+<li>Industrial-sector records are excluded whether the sector appears in the plant name or owner name; no exception is made for CPP/captive/co-generation wording.</li><li>Excluded industrial records: <b id="excludedCount">calculated on load</b>. Category breakdown:</li><div id="exclusionBreakdown" class="state-list">Calculated when data loads.</div>
+<li>Renewable projects are represented as individual records where present; the live VEDAS map also provides district-level renewable counts.</li>
+</ul>
+<b>Official cross-check:</b> ISRO–NITI Energy Map provides separate conventional and renewable plant layers; CEA's National Data Registry lists generating units by project, unit, fuel, state and status. These official sources are linked below for reconciliation. Their records can include industrial captive generators, so sector screening is still applied here.
+</div></section>
+</aside>
+</div>
+<section class="panel" style="margin-top:13px"><h2>Sources</h2><div class="source">
+1. <a href="https://www.listbase.org/en/environment/in-power-plants/" target="_blank" rel="noopener">ListBase India Power Plants download page</a> — 1,589 records advertised; data source WRI GPPD v1.3.0; CSV served from its CDN.<br>
+2. <a href="https://github.com/wri/global-power-plant-database" target="_blank" rel="noopener">WRI Global Power Plant Database</a> — fields include plant name, fuel, capacity, coordinates, owner, source and historical generation; WRI says the database is not currently maintained.<br>
+3. <a href="https://vedas.sac.gov.in/energymap/view/powergis.jsp" target="_blank" rel="noopener">ISRO–NITI Aayog Geospatial Energy Map of India</a> — conventional plant layers, renewable project layers and state-wise search.<br>
+4. <a href="https://egen.cea.gov.in/genreport.aspx" target="_blank" rel="noopener">CEA National Data Registry for Generating Units</a> — project/unit/fuel/state/status register; includes captive units, which are removed here when linked to industrial owners or sites.<br>
+5. <a href="https://cea.nic.in/reports/external/daily-generation?lang=en" target="_blank" rel="noopener">CEA Generation Reports</a> — station-wise generation reports.<br>
+</div></section>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+<script>
+const CSV_URL="https://cdn.en.listbase.org/environment/in-power-plants_EN.csv";
+const CEA_CSV_URL="data/cea_additions.csv";
+const GEO_URL="https://raw.githubusercontent.com/geohacker/india/master/state/india_state.geojson";
+const colors={Coal:"#4b5563",Gas:"#e08b28",Hydro:"#2476d2",Nuclear:"#7b4cc2",Solar:"#e0ad22",Wind:"#1b9b79",Biomass:"#a36a38",Oil:"#bd4b4b",Waste:"#8c6cae",Geothermal:"#cf6a9b",Other:"#7b8798"};
+let plants=[],geo=null,markers=[],map=null,layer=null,sortKey="name",sortDir=1,excludedCount=0;
+const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
+const val=(r,keys)=>{for(const k of keys){if(r[k]!=null&&String(r[k]).trim()!=="")return r[k]}const target=keys.map(norm);for(const k of Object.keys(r)){if(target.includes(norm(k))&&String(r[k]||"").trim()!=="")return r[k]}return ""};
+const num=v=>{let n=parseFloat(String(v??"").replace(/,/g,""));return Number.isFinite(n)?n:null};
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const fmt=n=>n==null?"—":Number(n).toLocaleString("en-IN",{maximumFractionDigits:2});
+function fuelGroup(f){let x=String(f||"Other").toLowerCase();if(x.includes("coal")||x.includes("lignite"))return "Coal";if(x.includes("gas"))return "Gas";if(x.includes("hydro"))return "Hydro";if(x.includes("nuclear"))return "Nuclear";if(x.includes("solar"))return "Solar";if(x.includes("wind"))return "Wind";if(x.includes("biomass")||x.includes("bagasse"))return "Biomass";if(x.includes("oil")||x.includes("diesel"))return "Oil";if(x.includes("waste"))return "Waste";return "Other"}
+function stateName(feature){let p=feature.properties||{};return p.st_nm||p.NAME_1||p.name_1||p.NAME_0||p.state||p.NAME||p.State||"Unknown"}
+function assignStates(){const features=geo.features||[];plants.forEach(p=>{if(!p.state)p.state="Unassigned";if(p.lat==null||p.lon==null)return;let pt=turf.point([p.lon,p.lat]);for(const f of features){try{if(turf.booleanPointInPolygon(pt,f)){p.state=stateName(f);break}}catch(e){}}});}
+function initMap(){map=L.map("map").setView([22.8,79.2],4.6);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);layer=L.geoJSON(geo,{style:{color:"#53657f",weight:1,fillColor:"#e9eef5",fillOpacity:.16}}).addTo(map);drawMarkers();map.fitBounds(layer.getBounds(),{padding:[10,10]});}
+function popup(p){return `<b>${esc(p.name)}</b><br>${esc(p.state)}<br><span>${esc(p.rawFuel||p.fuel)}</span><br>Capacity: ${fmt(p.capacity)} MW<br>Owner: ${esc(p.owner||"Not listed")}<br>Commissioned: ${esc(p.year||"Not listed")}<br><small>${esc(p.source||"WRI GPPD v1.3.0")}</small>`}
+function drawMarkers(){if(!map)return;markers.forEach(m=>map.removeLayer(m));markers=[];let f=document.getElementById("mapFuel").value,s=document.getElementById("mapState").value,st=document.getElementById("mapStatus").value;
+plants.forEach(p=>{if(st==="unmapped"||p.lat==null||p.lon==null)return;if(f&&p.fuel!==f)return;if(s&&p.state!==s)return;let color=colors[p.fuel]||colors.Other;let m=L.circleMarker([p.lat,p.lon],{radius:5,weight:1,color:"#fff",fillColor:color,fillOpacity:.9}).bindPopup(popup(p));m.addTo(map);markers.push(m)});document.getElementById("loadStatus").textContent=`Showing ${markers.length.toLocaleString("en-IN")} plant markers. ${plants.length.toLocaleString("en-IN")} records loaded; ${plants.filter(p=>p.lat!=null&&p.lon!=null).length.toLocaleString("en-IN")} have coordinates.`}
+function populateFilters(){let fuels=[...new Set(plants.map(p=>p.fuel))].sort(),states=[...new Set(plants.filter(p=>p.state!=="Unassigned").map(p=>p.state))].sort();for(let id of ["fuelFilter","mapFuel"])document.getElementById(id).innerHTML='<option value="">All fuel types</option>'+fuels.map(f=>`<option value="${esc(f)}">${esc(f)}</option>`).join("");for(let id of ["stateFilter","mapState"])document.getElementById(id).innerHTML='<option value="">All states / UTs</option>'+states.map(s=>`<option value="${esc(s)}">${esc(s)}</option>`).join("");}
+function sidePanels(){let mapped=plants.filter(p=>p.state!=="Unassigned");let counts={};mapped.forEach(p=>counts[p.state]=(counts[p.state]||0)+1);let sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);let max=sorted[0]?.[1]||1;document.getElementById("stateCounts").innerHTML=sorted.map(([s,n])=>`<div class="state-row"><span class="state-name">${esc(s)}</span><span class="statebar"><i style="width:${n/max*100}%"></i></span><span class="state-num">${n}</span></div>`).join("")+`<div class="status">Unassigned / no coordinate match: ${plants.length-mapped.length}</div>`;
+let fc={};plants.forEach(p=>fc[p.fuel]=(fc[p.fuel]||0)+1);document.getElementById("fuelCounts").innerHTML=Object.entries(fc).sort((a,b)=>b[1]-a[1]).map(([f,n])=>`<span class="chip"><b>${esc(f)}</b> ${n.toLocaleString("en-IN")}</span>`).join("");document.getElementById("legend").innerHTML=Object.entries(colors).map(([f,c])=>`<span><i class="dot" style="background:${c}"></i>${f}</span>`).join("");}
+function renderTable(){let q=document.getElementById("search").value.toLowerCase(),f=document.getElementById("fuelFilter").value,s=document.getElementById("stateFilter").value,c=document.getElementById("coordFilter").value;let arr=plants.filter(p=>(!f||p.fuel===f)&&(!s||p.state===s)&&(!c||(c==="yes"?(p.lat!=null&&p.lon!=null):(p.lat==null||p.lon==null)))&&[p.name,p.state,p.rawFuel,p.owner,p.fuel].join(" ").toLowerCase().includes(q));arr.sort((a,b)=>{let x=a[sortKey],y=b[sortKey];if(x==null)return 1;if(y==null)return -1;return (typeof x==="number"&&typeof y==="number"?x-y:String(x).localeCompare(String(y)))*sortDir});document.getElementById("rows").innerHTML=arr.map(p=>`<tr><td><b>${esc(p.name)}</b></td><td>${esc(p.state)}</td><td><span class="tag">${esc(p.rawFuel||p.fuel)}</span></td><td class="num">${fmt(p.capacity)}</td><td>${esc(p.owner||"—")}</td><td class="num">${esc(p.year||"—")}</td><td class="num">${fmt(p.lat)}</td><td class="num">${fmt(p.lon)}</td></tr>`).join("");document.getElementById("tableStatus").textContent=`Showing ${arr.length.toLocaleString("en-IN")} of ${plants.length.toLocaleString("en-IN")} records.`}
+const INDUSTRY_RULES=[
+ ["Cement",/\b(cement|clinker|cement works|cement plant)\b/i],
+ ["Steel & iron",/\b(steel|sponge iron|iron works|iron ore|pig iron|ferro alloy|ferroalloy|alloy steel|rolling mill|foundry|smelter)\b/i],
+ ["Mining & minerals",/\b(mine|mining|colliery|coal washery|mineral|bauxite|limestone|quarry)\b/i],
+ ["Oil, gas & refining",/\b(refinery|petroleum|petrochemical|oil terminal|gas processing|lng terminal|lpg bottling)\b/i],
+ ["Chemicals & fertilisers",/\b(chemical|fertili[sz]er|ammonia|urea|chlor.?alkali|caustic soda|pharma|pharmaceutical|pesticide)\b/i],
+ ["Paper, pulp & packaging",/\b(paper mill|paper plant|pulp|kraft|board mill|packaging mill)\b/i],
+ ["Sugar & distillery",/\b(sugar mill|sugar factory|sugar works|distillery|ethanol plant|molasses)\b/i],
+ ["Textiles & manufacturing",/\b(textile|spinning mill|weaving|fabric|garment|industrial park|industrial estate|manufacturing|factory|works)\b/i],
+ ["Metals & aluminium",/\b(aluminium|aluminum|copper|zinc|lead|metal plant|metal works)\b/i],
+ ["Transport & infrastructure",/\b(port|dock|airport|railway workshop|locomotive works|steel plant township)\b/i],
+ ["Other industrial",/\b(tyre|tire|rubber|automobile|auto plant|engineering works|glass works|ceramic|refractory|food processing|brewery|distillery|fertiliser complex)\b/i]
+];
+function industrialCategory(name,owner){
+ const t=String(name||"")+" "+String(owner||"");
+ for(const [category,re] of INDUSTRY_RULES) if(re.test(t)) return category;
+ return "";
+}
+function isIndustrialSiteOnly(name,owner,fuel){return Boolean(industrialCategory(name,owner));}
+async function load(){try{
+ document.getElementById("loadStatus").textContent="Downloading historical baseline, official CEA additions and state boundaries…";
+ let [csvRes,geoRes,ceaRes]=await Promise.all([fetch(CSV_URL),fetch(GEO_URL),fetch(CEA_CSV_URL).catch(()=>null)]);
+ if(!csvRes.ok)throw new Error("Could not download historical baseline CSV (HTTP "+csvRes.status+").");
+ if(!geoRes.ok)throw new Error("Could not download state boundary GeoJSON (HTTP "+geoRes.status+").");
+ let [csvText,g]=await Promise.all([csvRes.text(),geoRes.json()]);
+ let ceaText=(ceaRes&&ceaRes.ok)?await ceaRes.text():"name,state,rawFuel,capacity,owner,year,lat,lon,source,source_as_of\n";
+ geo=g;
+ let parsed=Papa.parse(csvText,{header:true,skipEmptyLines:true,dynamicTyping:false});
+ let allRows=parsed.data.map(r=>{let name=val(r,["Name","name","Plant Name"]),rawFuel=val(r,["Primary Fuel","primary_fuel","Fuel"]),lat=num(val(r,["Latitude","latitude"])),lon=num(val(r,["Longitude","longitude"])),owner=val(r,["Owner","owner"]);return {name:name||"Unnamed plant",id:val(r,["Gppd Idnr","gppd_idnr"]),capacity:num(val(r,["Capacity Mw","capacity_mw"])),lat,lon,rawFuel:rawFuel||"Other",fuel:fuelGroup(rawFuel),owner,year:val(r,["Commissioning Year","commissioning_year"]),state:"Unassigned",source:"WRI GPPD v1.3.0"}}).filter(p=>p.name);
+ let ceaParsed=Papa.parse(ceaText,{header:true,skipEmptyLines:true,dynamicTyping:false});
+ const seen=new Set(allRows.map(p=>norm(p.name)));
+ const ceaRows=ceaParsed.data.map(r=>{let name=val(r,["name","station","plant"]),rawFuel=val(r,["rawFuel","fuel","primary_fuel"])||"Other";return {name,id:"CEA-"+norm(name),capacity:num(val(r,["capacity","capacity_mw"])),lat:num(val(r,["lat","latitude"])),lon:num(val(r,["lon","longitude"])),rawFuel,fuel:fuelGroup(rawFuel),owner:val(r,["owner","utility"]),year:val(r,["year","commissioning_year"]),state:val(r,["state"])||"Unassigned",source:val(r,["source"])||"CEA/NPP"}}).filter(p=>p.name&&!seen.has(norm(p.name)));
+ allRows=allRows.concat(ceaRows);
+ const excludedRows=allRows.filter(p=>isIndustrialSiteOnly(p.name,p.owner,p.rawFuel));
+ excludedCount=excludedRows.length;
+ const exclusionSummary=INDUSTRY_RULES.map(([category])=>({category,count:excludedRows.filter(p=>industrialCategory(p.name,p.owner)===category).length})).filter(x=>x.count>0);
+ document.getElementById('exclusionBreakdown').innerHTML=exclusionSummary.map(x=>'<div class="state-row"><span class="state-name">'+esc(x.category)+'</span><b class="state-num">'+x.count.toLocaleString('en-IN')+'</b></div>').join('')||'No industrial records detected.';
+ plants=allRows.filter(p=>!isIndustrialSiteOnly(p.name,p.owner,p.rawFuel));
+ assignStates();
+ document.getElementById("total").textContent=plants.length.toLocaleString("en-IN");
+ document.getElementById("excludedCount").textContent=excludedCount.toLocaleString("en-IN");
+ document.getElementById("mapped").textContent=plants.filter(p=>p.lat!=null&&p.lon!=null).length.toLocaleString("en-IN");
+ document.getElementById("fuels").textContent=new Set(plants.map(p=>p.fuel)).size;
+ document.getElementById("states").textContent=new Set(plants.filter(p=>p.state!=="Unassigned").map(p=>p.state)).size;
+ populateFilters();sidePanels();initMap();renderTable();document.getElementById("loadError").style.display="none";
+ document.getElementById("loadStatus").textContent="Loaded "+fmt(plants.length)+" screened records; "+fmt(ceaRows.length)+" additional CEA/NPP records found in the update feed.";
+}catch(e){document.getElementById("loadError").style.display="block";document.getElementById("loadError").textContent=e.message+" Use the source links above to open the full inventory and official live map.";document.getElementById("loadStatus").textContent="Data loading failed. This dashboard needs an internet connection."}}
+["mapFuel","mapState","mapStatus"].forEach(id=>document.getElementById(id).addEventListener("change",drawMarkers));["search","fuelFilter","stateFilter","coordFilter"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",renderTable));document.querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{let k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1}renderTable()}));
+document.getElementById("downloadCsv").addEventListener("click",()=>{if(!plants.length)return;let head=["Plant","State","Primary fuel","Capacity MW","Owner","Commissioning year","Latitude","Longitude","GPPD ID"];let rows=plants.map(p=>[p.name,p.state,p.rawFuel,p.capacity??"",p.owner,p.year,p.lat??"",p.lon??"",p.id]);let csv=[head,...rows].map(r=>r.map(v=>'"'+String(v??"").replaceAll('"','""')+'"').join(",")).join("\r\n");let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.download="india_power_plants_wri_gppd_v1_3.csv";a.click();URL.revokeObjectURL(a.href)});
+load();
+</script></body></html>

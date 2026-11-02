@@ -1,0 +1,28 @@
+ANIKETVERSE — INDIA ELECTRICITY POWER STATIONS
+==============================================
+
+1. Extract this ZIP file on your computer.
+2. Open https://github.com/aniketverse/india-power-plants
+3. Click Add file > Upload files.
+4. Drag ALL files and folders from the extracted project folder into the upload area.
+   Important: include the .github folder. It contains the automatic updater.
+5. Enter commit message: "Add live electricity power stations website"
+6. Click Commit changes.
+
+Then enable the website:
+1. Repository > Settings > Pages
+2. Source: Deploy from a branch
+3. Branch: main
+4. Folder: /(root)
+5. Save
+
+Then enable automatic updates:
+1. Repository > Actions
+2. If prompted, enable workflows.
+3. Select "Refresh India power station inventory".
+4. Click Run workflow once.
+
+Website address:
+https://aniketverse.github.io/india-power-plants/
+
+The updater checks CEA/National Power Portal reports daily. If report structure changes, it fails safely and keeps the previous data.
