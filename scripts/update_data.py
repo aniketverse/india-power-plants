@@ -25,7 +25,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 CSV_PATH = DATA / "cea_additions.csv"
 LOG_PATH = DATA / "update_log.json"
-REPORTS_URL = "https://cea.nic.in/reports/external/daily-generation?lang=en"
+REPORTS_URL = "https://npp.gov.in/publishedReports"
 HEADERS = {"User-Agent": "Aniketverse-PowerStations-Monitor/1.0 (public research dashboard)"}
 TIMEOUT = 45
 
@@ -82,7 +82,7 @@ def fuel_group(v):
 def industrial(name, owner):
     return bool(INDUSTRY.search(f"{clean(name)} {clean(owner)}"))
 
-def fetch_report_links(html):
+def fetch_report_links(html, base_url):
     soup = BeautifulSoup(html, "html.parser")
 
     targets = {
@@ -103,12 +103,7 @@ def fetch_report_links(html):
     found = {}
 
     for anchor in soup.find_all("a", href=True):
-        link_text = " ".join([
-            anchor.get_text(" ", strip=True),
-            anchor.get("title", ""),
-            anchor.get("aria-label", "")
-        ])
-
+        link_text = anchor.get_text(" ", strip=True)
         href = anchor["href"]
 
         is_excel = (
@@ -120,15 +115,25 @@ def fetch_report_links(html):
             continue
 
         parent = anchor
-        for _ in range(15):
+
+        for _ in range(12):
             if parent is None:
                 break
 
             context = parent.get_text(" ", strip=True)
 
-            for label, pattern in targets.items():
-                if label not in found and pattern.search(context):
-                    found[label] = urljoin(REPORTS_URL, href)
+            matches = [
+                label for label, pattern in targets.items()
+                if pattern.search(context)
+            ]
+
+            if len(matches) == 1:
+                label = matches[0]
+                found.setdefault(label, urljoin(base_url, href))
+                break
+
+            if len(matches) > 1:
+                break
 
             parent = parent.parent
 
@@ -200,7 +205,7 @@ def main():
     session.headers.update(HEADERS)
     response = session.get(REPORTS_URL, timeout=TIMEOUT)
     response.raise_for_status()
-    links = fetch_report_links(response.text)
+    links = fetch_report_links(response.text, response.url)
     if not links:
         raise RuntimeError("Could not locate the expected CEA/NPP Excel report links. Existing inventory was left untouched.")
     collected = []
