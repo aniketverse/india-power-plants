@@ -56,14 +56,14 @@ UTILITY_OWNERS = [
     "waaree", "ntpc green"
 ]
 FUEL_WORDS = [
+    (re.compile(r"ther\s*\(gt\)|ccgt|ccpp|gas|combined cycle", re.I), "Gas"),
+    (re.compile(r"ther\s*\(dg\)|diesel|oil", re.I), "Oil"),
     (re.compile(r"coal|lignite|thermal", re.I), "Coal"),
-    (re.compile(r"gas|combined cycle", re.I), "Gas"),
     (re.compile(r"hydro|hydel|pumped", re.I), "Hydro"),
     (re.compile(r"nuclear|atomic", re.I), "Nuclear"),
     (re.compile(r"solar", re.I), "Solar"),
     (re.compile(r"wind", re.I), "Wind"),
     (re.compile(r"biomass|bagasse", re.I), "Biomass"),
-    (re.compile(r"diesel|oil", re.I), "Oil"),
     (re.compile(r"waste", re.I), "Waste"),
 ]
 
@@ -144,6 +144,168 @@ def find_col(headers, patterns):
         if any(re.search(p, clean(h), re.I) for p in patterns): return i
     return None
 
+
+CEA_STATE_MAP = {
+    "ANDHRA PRADESH": "Andhra Pradesh",
+    "ARUNACHAL PRADESH": "Arunachal Pradesh",
+    "ASSAM": "Assam",
+    "BIHAR": "Bihar",
+    "CHHATISGARH": "Chhattisgarh",
+    "CHHATTISGARH": "Chhattisgarh",
+    "GOA": "Goa",
+    "GUJARAT": "Gujarat",
+    "HARYANA": "Haryana",
+    "HIMACHAL PRADESH": "Himachal Pradesh",
+    "JHARKHAND": "Jharkhand",
+    "KARNATAKA": "Karnataka",
+    "KERALA": "Kerala",
+    "MADHYA PRADESH": "Madhya Pradesh",
+    "MAHARASHTRA": "Maharashtra",
+    "MANIPUR": "Manipur",
+    "MEGHALAYA": "Meghalaya",
+    "MIZORAM": "Mizoram",
+    "NAGALAND": "Nagaland",
+    "ODISHA": "Odisha",
+    "ORISSA": "Odisha",
+    "PUNJAB": "Punjab",
+    "RAJASTHAN": "Rajasthan",
+    "SIKKIM": "Sikkim",
+    "TAMIL NADU": "Tamil Nadu",
+    "TELANGANA": "Telangana",
+    "TRIPURA": "Tripura",
+    "UTTAR PRADESH": "Uttar Pradesh",
+    "UTTARAKHAND": "Uttarakhand",
+    "WEST BENGAL": "West Bengal",
+    "JAMMU AND KASHMIR": "Jammu and Kashmir",
+    "LADAKH": "Ladakh",
+    "DELHI": "Delhi",
+}
+
+CEA_REGION_HEADINGS = {
+    "NORTHERN", "NORTHERN REGION",
+    "WESTERN", "WESTERN REGION",
+    "SOUTHERN", "SOUTHERN REGION",
+    "EASTERN", "EASTERN REGION",
+    "NORTH EASTERN", "NORTH-EASTERN",
+    "NORTH EAST REGION", "BHUTAN IMP.", "BHUTAN"
+}
+
+
+def parse_cea_layout(df, source_label):
+    """Parse CEA JasperReports XLS with State/Sector/Type group rows."""
+
+    preview = " ".join(
+        clean(x) for x in df.head(5).to_numpy().ravel()
+    )
+
+    if "GENERATION REPORT" not in preview.upper():
+        return []
+
+    date_match = re.search(
+        r"REPORT\s+FOR\s+(\d{1,2}/\d{1,2}/\d{4})",
+        preview, re.I
+    )
+
+    source_as_of = ""
+    if date_match:
+        try:
+            source_as_of = datetime.strptime(
+                date_match.group(1), "%d/%m/%Y"
+            ).date().isoformat()
+        except ValueError:
+            pass
+
+    current_state = ""
+    current_sector = ""
+    current_fuel = ""
+    records = []
+
+    for row in df.itertuples(index=False, name=None):
+        vals = [clean(x) for x in row]
+
+        if not vals:
+            continue
+
+        name = vals[0]
+        upper = name.upper().strip()
+
+        if not upper:
+            continue
+
+        if upper in CEA_REGION_HEADINGS:
+            current_state = ""
+            current_sector = ""
+            current_fuel = ""
+            continue
+
+        if upper in CEA_STATE_MAP:
+            current_state = CEA_STATE_MAP[upper]
+            current_sector = ""
+            current_fuel = ""
+            continue
+
+        if "SECTOR:" in upper:
+            current_sector = vals[4] if len(vals) > 4 else ""
+            current_fuel = ""
+            continue
+
+        if "TYPE:" in upper:
+            current_fuel = vals[4] if len(vals) > 4 else ""
+            continue
+
+        if not current_state or not name:
+            continue
+
+        if upper == "UNIT" or "TOTAL" in upper:
+            continue
+
+        # Column H (index 7) contains monitored capacity in MW.
+        if len(vals) <= 7 or not vals[7]:
+            continue
+
+        try:
+            capacity = float(vals[7].replace(",", ""))
+        except (TypeError, ValueError):
+            continue
+
+        if industrial(name, ""):
+            continue
+
+        sector_text = current_sector.lower()
+
+        is_central_state = bool(re.search(
+            r"\b(central sector|state sector|state government)\b",
+            sector_text
+        ))
+
+        is_utility_ipp = bool(re.search(
+            r"\b(utility|ipp|independent power producer)\b",
+            sector_text
+        ))
+
+        # Some private-sector plant names contain the utility owner.
+        known_owner = any(
+            owner in name.lower() for owner in UTILITY_OWNERS
+        )
+
+        if not (is_central_state or is_utility_ipp or known_owner):
+            continue
+
+        records.append({
+            "name": name,
+            "state": current_state,
+            "rawFuel": current_fuel or "Other",
+            "capacity": f"{capacity:g}",
+            "owner": "",
+            "year": "",
+            "lat": "",
+            "lon": "",
+            "source": f"CEA/NPP {source_label}",
+            "source_as_of": source_as_of
+        })
+
+    return records
+
 def parse_workbook(content, source_label):
     # pandas selects xlrd for legacy .xls and openpyxl for .xlsx.
     book = pd.read_excel(io.BytesIO(content), sheet_name=None, header=None, dtype=str)
@@ -151,6 +313,10 @@ def parse_workbook(content, source_label):
     for sheet_name, df in book.items():
         if df.empty: continue
         df = df.fillna("")
+        grid_records = parse_cea_layout(df, source_label)
+        if grid_records:
+            records.extend(grid_records)
+            continue
         header_idx = None
         cols = None
         for ridx in range(min(len(df), 45)):
