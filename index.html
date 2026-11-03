@@ -5,28 +5,58 @@
 <title>Aniketverse | India Electricity Power Stations</title>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>
-:root{--navy:#102345;--blue:#2459c4;--ink:#172238;--muted:#68758a;--bg:#f3f6fb;--line:#e1e7f0;--panel:#fff;--gold:#f5b942}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.48 Inter,system-ui,-apple-system,Segoe UI,Arial}
-header{background:linear-gradient(120deg,#0c1c37,#234d91);color:#fff;padding:25px max(18px,calc((100vw - 1440px)/2))}
-h1{font-size:clamp(24px,4vw,35px);margin:0 0 5px;line-height:1.15}header p{margin:0;color:#d8e4ff}
-main{max-width:1440px;margin:18px auto;padding:0 15px 36px}
-.notice{border:1px solid #f0d89a;background:#fff7e4;color:#6c4b00;padding:12px 14px;border-radius:12px;margin-bottom:13px}
-.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.toolbar a,.toolbar button{border:0;border-radius:9px;padding:10px 13px;font:600 13px inherit;text-decoration:none;cursor:pointer;background:var(--blue);color:#fff}.toolbar a.alt,.toolbar button.alt{background:#e9eef8;color:#23344f}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.card,.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:0 3px 12px #1a315308}.card{padding:14px}.label{font-size:12px;color:var(--muted)}.value{font-size:25px;font-weight:760;letter-spacing:-.5px;margin:3px 0}.sub{font-size:11px;color:var(--muted)}
-.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:13px;margin-top:13px;align-items:start}.panel{padding:15px}.panel h2{font-size:17px;margin:0 0 3px}.hint{font-size:12px;color:var(--muted);margin:0 0 11px}
-#map{height:620px;border-radius:11px;border:1px solid var(--line);z-index:1}.maptools{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0}.maptools select,.filters input,.filters select{border:1px solid var(--line);border-radius:8px;background:#fff;padding:9px 10px;font:inherit;color:var(--ink)}
-.maplegend{display:flex;flex-wrap:wrap;gap:9px;font-size:11px;color:var(--muted);margin:8px 0}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
-.sidebar{display:flex;flex-direction:column;gap:12px}.state-list{max-height:430px;overflow:auto}.state-row{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid #edf0f5;font-size:12px}.state-name{flex:1}.state-num{font-weight:700;font-variant-numeric:tabular-nums}.statebar{height:5px;background:#edf1f7;border-radius:8px;overflow:hidden;width:70px}.statebar i{display:block;height:100%;background:#2c65d5}
-.fuel-list{display:flex;flex-wrap:wrap;gap:6px}.chip{background:#edf2fb;border:1px solid #e0e7f3;padding:5px 8px;border-radius:99px;font-size:11px}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.filters input{flex:1;min-width:200px}.filters select{min-width:145px}
-.tablewrap{overflow:auto;max-height:600px;border:1px solid var(--line);border-radius:9px}table{border-collapse:collapse;width:100%;min-width:920px;background:white}th,td{padding:9px 10px;border-bottom:1px solid #e9edf3;text-align:left;font-size:12px}th{position:sticky;top:0;background:#f5f8fc;color:#59667a;z-index:2;white-space:nowrap;cursor:pointer}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tbody tr:hover{background:#f7faff}.tag{background:#edf2ff;color:#2a4f99;padding:3px 7px;border-radius:99px;font-size:10px;white-space:nowrap}
-.status{font-size:12px;color:var(--muted);margin:8px 0}.source{font-size:11px;color:var(--muted)}.source a{color:#2459c4}
-#loadError{display:none;background:#fff0ee;color:#8c2e22;border:1px solid #f2c7c2;border-radius:9px;padding:10px;margin:8px 0}
-@media(max-width:1000px){.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr}.state-list{max-height:300px}#map{height:520px}}
-@media(max-width:650px){.kpis{grid-template-columns:1fr 1fr}.sidebar{display:flex}.panel{padding:12px}#map{height:440px}}
+:root{--navy:#071d3b;--navy2:#0d315d;--blue:#1675d1;--cyan:#11a6c7;--green:#16a56b;--orange:#f28b25;--purple:#7652d6;--pink:#d83d83;--ink:#13243d;--muted:#64748b;--bg:#edf3f9;--line:#dce6f1;--panel:#fff;--shadow:0 10px 28px rgba(15,45,82,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:20px}body{margin:0;background:linear-gradient(180deg,#eaf2fa 0,#f5f8fc 340px,#f3f6fb 100%);color:var(--ink);font:14px/1.5 Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.app-shell{min-height:100vh}.side-nav{position:fixed;inset:0 auto 0 0;width:224px;background:linear-gradient(180deg,#061a35,#0c3765 70%,#09284c);color:#dcecff;padding:22px 14px;z-index:1000;display:flex;flex-direction:column;box-shadow:8px 0 28px rgba(6,25,50,.12)}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 24px;border-bottom:1px solid #ffffff20;margin-bottom:18px}.brand-mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#f7b733,#f47721);display:grid;place-items:center;color:#092346;font-size:22px;font-weight:900;box-shadow:0 5px 16px #f4772140}.brand strong{display:block;color:#fff;font-size:14px;letter-spacing:.2px}.brand small{color:#9fc4e8;font-size:10px;letter-spacing:1.4px;text-transform:uppercase}
+.nav-label{font-size:10px;color:#83a8ce;text-transform:uppercase;letter-spacing:1.5px;padding:10px 11px 7px}.side-nav a{display:flex;align-items:center;gap:11px;color:#c9dcf0;text-decoration:none;padding:11px 12px;border-radius:11px;font-weight:600;font-size:13px;margin:2px 0;transition:.2s}.side-nav a .nav-ico{width:22px;text-align:center;font-size:16px}.side-nav a:hover,.side-nav a.active{background:linear-gradient(90deg,#1675d1,#159ac0);color:#fff;box-shadow:0 7px 18px #0076c54a}.nav-bottom{margin-top:auto;border-top:1px solid #ffffff20;padding:15px 10px 0;color:#8fb4d8;font-size:11px;line-height:1.6}
+.app-content{margin-left:224px;min-width:0}header{position:relative;overflow:hidden;color:#fff;padding:28px clamp(20px,3vw,48px) 30px;background:linear-gradient(110deg,#071a35 0%,#103f71 48%,#087e9d 100%);min-height:170px}header:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 25%,#49c9dc55,transparent 26%),radial-gradient(circle at 66% 100%,#21a66c44,transparent 32%),linear-gradient(90deg,transparent 55%,#ffffff08);pointer-events:none}.hero-inner{position:relative;z-index:2;max-width:1600px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.hero-kicker{font-size:10px;font-weight:800;letter-spacing:2px;color:#9ce4ee;text-transform:uppercase;margin-bottom:7px}.hero-title{font-size:clamp(26px,3vw,42px);line-height:1.08;letter-spacing:-1.2px;margin:0 0 9px;font-weight:850}.hero-title span{color:#ffc34e}.hero-sub{margin:0;color:#d7eafa;font-size:13px}.hero-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.hero-tags span{border:1px solid #ffffff35;background:#ffffff12;border-radius:99px;padding:5px 10px;color:#eaf7ff;font-size:10px;font-weight:700}.hero-art{width:min(37%,430px);min-width:220px;height:112px;opacity:.95;filter:drop-shadow(0 10px 20px #00182d55)}.hero-art svg{width:100%;height:100%}
+main{max-width:1680px;margin:0 auto;padding:20px clamp(14px,2vw,30px) 40px}.notice{border:1px solid #f3d38b;background:linear-gradient(100deg,#fff8e6,#fffdf7);color:#76520b;padding:12px 15px;border-radius:13px;margin-bottom:14px;box-shadow:0 4px 12px #9b6b1110;font-size:12px}.toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 16px}.toolbar a,.toolbar button{border:0;border-radius:10px;padding:9px 13px;font:700 12px/1.2 Inter,system-ui,Arial;text-decoration:none;cursor:pointer;background:#e7f1fb;color:#17446f;transition:.2s}.toolbar a:first-child{background:#0e70c7;color:#fff}.toolbar a:hover,.toolbar button:hover{transform:translateY(-1px);filter:brightness(.97)}
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.card,.panel{background:var(--panel);border:1px solid #e1eaf3;border-radius:16px;box-shadow:var(--shadow)}.card{padding:16px 17px;position:relative;overflow:hidden;min-height:112px;color:#fff;border:0}.card:after{content:"";position:absolute;width:120px;height:120px;border-radius:50%;right:-28px;top:-38px;background:#ffffff16}.card:nth-child(1){background:linear-gradient(135deg,#0875ca,#123d83)}.card:nth-child(2){background:linear-gradient(135deg,#7544cf,#41248d)}.card:nth-child(3){background:linear-gradient(135deg,#1bb878,#08734e)}.card:nth-child(4){background:linear-gradient(135deg,#e9a126,#df5d18)}.label{font-size:11px;color:#e4f1ff;font-weight:700;letter-spacing:.3px}.value{font-size:clamp(25px,2.4vw,34px);font-weight:850;letter-spacing:-.8px;margin:5px 0 2px;color:#fff;font-variant-numeric:tabular-nums}.sub{font-size:10px;color:#e0edfb}
+.section-kicker{font-size:10px;text-transform:uppercase;letter-spacing:1.5px;color:#1683b9;font-weight:800;margin:0 0 4px}.panel{padding:17px;min-width:0}.panel h2{font-size:16px;margin:0 0 3px;color:#102e57;letter-spacing:-.2px}.hint{font-size:11px;color:var(--muted);margin:0 0 12px}.insight-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:14px 0}.chart-panel{min-height:300px;position:relative}.chart-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:8px}.chart-pill{white-space:nowrap;border-radius:99px;background:#edf5fc;color:#21618f;padding:5px 9px;font-size:9px;font-weight:800}.chart-wrap{height:215px;position:relative}.chart-wrap canvas{max-width:100%;max-height:100%}.chart-note{font-size:10px;color:#77869a;margin:7px 0 0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:13px;margin-top:13px;align-items:start}.panel h2:before{content:"";display:inline-block;width:5px;height:17px;border-radius:9px;background:linear-gradient(#1b9bd0,#2865cf);margin-right:9px;vertical-align:-3px}.layout>div>.panel:first-child{border-top:3px solid #1687c6}#map{height:560px;border-radius:12px;border:1px solid var(--line);z-index:1;overflow:hidden}.maptools{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:11px 0}.maptools select,.filters input,.filters select{border:1px solid #d9e4ef;border-radius:9px;background:#fff;padding:9px 11px;font:inherit;color:var(--ink);box-shadow:0 2px 5px #173b5b08}.maptools select:focus,.filters input:focus,.filters select:focus{outline:2px solid #a9d9f5;border-color:#5da9d8}.maplegend{display:flex;flex-wrap:wrap;gap:9px;font-size:10px;color:var(--muted);margin:9px 0}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}.sidebar{display:flex;flex-direction:column;gap:12px}.state-list{max-height:380px;overflow:auto}.state-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid #edf1f6;font-size:11px}.state-name{flex:1}.state-num{font-weight:800;font-variant-numeric:tabular-nums;color:#173c66}.statebar{height:7px;background:#edf2f8;border-radius:8px;overflow:hidden;width:72px}.statebar i{display:block;height:100%;background:linear-gradient(90deg,#13a5b8,#2568d7);border-radius:8px}.fuel-list{display:flex;flex-wrap:wrap;gap:6px}.chip{background:#f1f6fb;border:1px solid #e0eaf4;padding:6px 9px;border-radius:9px;font-size:10px;color:#284563}.chip b{color:#123e6b}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.filters input{flex:1;min-width:200px}.filters select{min-width:145px}.tablewrap{overflow:auto;max-height:600px;border:1px solid #e1eaf3;border-radius:11px}table{border-collapse:collapse;width:100%;min-width:920px;background:white}th,td{padding:10px 11px;border-bottom:1px solid #e9eff5;text-align:left;font-size:11px}th{position:sticky;top:0;background:#eaf3fb;color:#244b70;z-index:2;white-space:nowrap;cursor:pointer;font-size:10px;text-transform:uppercase;letter-spacing:.4px}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}tbody tr:hover{background:#f1f8fe}.tag{background:#eaf2ff;color:#2a4f99;padding:4px 8px;border-radius:99px;font-size:9px;white-space:nowrap;font-weight:700}.status{font-size:11px;color:var(--muted);margin:9px 0}.source{font-size:11px;color:var(--muted);line-height:1.75}.source a{color:#2459c4}#loadError{display:none;background:#fff0ee;color:#8c2e22;border:1px solid #f2c7c2;border-radius:10px;padding:10px;margin:8px 0}.source-card{margin-top:13px}.source-card .source{font-size:11px}.source-card a{font-weight:700}
+@media(max-width:1250px){.layout{grid-template-columns:minmax(0,1fr) 280px}.hero-art{width:30%}}
+@media(max-width:980px){.side-nav{width:68px;padding:16px 8px}.brand{justify-content:center;padding:4px 0 18px}.brand-copy,.nav-label,.side-nav a .nav-text,.nav-bottom{display:none}.side-nav a{justify-content:center;padding:12px 7px}.side-nav a .nav-ico{font-size:19px}.app-content{margin-left:68px}.layout{grid-template-columns:1fr}.sidebar{display:grid;grid-template-columns:1fr 1fr}.state-list{max-height:270px}#map{height:500px}}
+@media(max-width:650px){.side-nav{position:sticky;top:0;width:100%;height:58px;inset:auto;flex-direction:row;align-items:center;padding:6px 8px;overflow-x:auto;box-shadow:0 4px 14px #061a3530}.brand{border:0;margin:0;padding:0 8px 0 2px;flex:0 0 auto}.brand-mark{width:34px;height:34px}.side-nav nav{display:flex;gap:3px}.side-nav a{padding:9px 10px;flex:0 0 auto}.side-nav a .nav-ico{font-size:17px}.app-content{margin-left:0}.hero-inner{display:block}.hero-art{position:absolute;right:-5px;bottom:-5px;width:45%;min-width:145px;opacity:.55}.hero-title{max-width:75%;font-size:27px}.hero-sub{max-width:80%;font-size:11px}.hero-tags{max-width:70%}header{padding:23px 17px 25px;min-height:175px}.kpis{grid-template-columns:1fr 1fr;gap:8px}.card{padding:12px;min-height:100px}.value{font-size:24px}.insight-grid{grid-template-columns:1fr}.insight-grid .chart-panel:last-child{grid-column:auto}.chart-panel{min-height:280px}.chart-wrap{height:205px}.sidebar{display:flex}.panel{padding:13px}#map{height:430px}.filters input{min-width:100%;}.filters select{flex:1;min-width:130px}main{padding:14px 10px 30px}.notice{font-size:10px}.toolbar a,.toolbar button{font-size:10px;padding:8px 10px}}
 </style></head>
 <body>
-<header><h1>India Electricity Power Stations</h1><p>Official-source monitoring · Utility generating stations · State distribution · Political map</p></header>
+<div class="app-shell">
+<nav class="side-nav" aria-label="Dashboard navigation">
+  <div class="brand"><div class="brand-mark">⚡</div><div class="brand-copy"><strong>Aniketverse</strong><small>Energy intelligence</small></div></div>
+  <div class="nav-label">Workspace</div>
+  <nav>
+    <a class="active" href="#overview"><span class="nav-ico">⌂</span><span class="nav-text">Overview</span></a>
+    <a href="#analytics"><span class="nav-ico">▥</span><span class="nav-text">Analytics</span></a>
+    <a href="#yearTrendChart"><span class="nav-ico">↗</span><span class="nav-text">Yearly trend</span></a>
+    <a href="#mapPanel"><span class="nav-ico">⌖</span><span class="nav-text">Plant map</span></a>
+    <a href="#inventory"><span class="nav-ico">▤</span><span class="nav-text">Stations</span></a>
+    <a href="#statePanel"><span class="nav-ico">▦</span><span class="nav-text">State analysis</span></a>
+    <a href="#fuelPanel"><span class="nav-ico">◈</span><span class="nav-text">Fuel analysis</span></a>
+    <a href="#dataNotes"><span class="nav-ico">ⓘ</span><span class="nav-text">Data & updates</span></a>
+  </nav>
+  <div class="nav-bottom">INDIA POWER GRID<br>Historical baseline + CEA/NPP feed</div>
+</nav>
+<div class="app-content">
+<header>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-kicker">India · Electricity infrastructure</div>
+      <h1 class="hero-title">India Power Plants <span>Dashboard</span></h1>
+      <p class="hero-sub">Utility generating stations · Installed capacity · Fuel mix · State-wise inventory</p>
+      <div class="hero-tags"><span>LIVE MAP EXPERIENCE</span><span>FULL INVENTORY</span><span>DATA EXPLORER</span></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 420 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 108L60 78L105 96L160 58L205 92L260 64L315 93L365 48L420 80V130H0Z" fill="#45B7A0" opacity=".25"/>
+        <path d="M0 116L85 100L150 110L220 88L290 109L360 88L420 101V130H0Z" fill="#8FD3C5" opacity=".22"/>
+        <g stroke="#E8F8FF" stroke-width="2.2" stroke-linecap="round"><path d="M80 105V28M80 28L56 15M80 28L104 15M80 28L80 0"/><path d="M80 28L74 52L86 52Z" fill="#E8F8FF"/><path d="M260 106V17M260 17L231 3M260 17L289 3M260 17V-7"/><path d="M260 17L253 43L267 43Z" fill="#E8F8FF"/><path d="M355 108V43M355 43L335 32M355 43L375 32M355 43V22"/></g>
+        <g fill="#F5C451" opacity=".95"><path d="M0 82L26 82L37 64L49 82L62 82V108H0Z"/><path d="M18 63L27 42L36 63Z"/></g>
+        <g stroke="#C9F3FF" stroke-width="1.5" fill="#0B6B8D" opacity=".95"><path d="M120 105L142 78L164 105Z"/><path d="M132 105L154 78L176 105Z"/><path d="M144 105L166 78L188 105Z"/></g>
+        <path d="M205 110L218 88L231 110Z" fill="#F7B93C"/><path d="M218 88V64" stroke="#F7B93C" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</header>
 <main>
 <div class="notice"><b>Scope:</b> Electricity-generating stations only. Industrial establishments and their in-house generation records (including cement, steel, mining, metals, chemicals, refining, fertiliser, paper, sugar, textiles, manufacturing, ports and similar industrial sites) are excluded using a strict plant-name AND owner-name screening rule. No industrial-name exception is allowed. The underlying WRI GPPD v1.3.0 source is historical and no longer maintained, so this is a cleaned historical inventory—not a certified current register. Cross-check current plant layers against the official ISRO–NITI Energy Map and CEA generator registry. Rooftop/distributed solar is excluded.</div>
 <div class="toolbar">
@@ -37,15 +67,37 @@ main{max-width:1440px;margin:18px auto;padding:0 15px 36px}
 <a class="alt" href="https://egen.cea.gov.in/genreport.aspx" target="_blank" rel="noopener">CEA generator registry ↗</a>
 <button id="downloadCsv" class="alt">Download loaded inventory CSV</button>
 </div>
-<section class="kpis" id="kpis">
+<section class="kpis" id="overview">
 <div class="card"><div class="label">Plant records</div><div class="value" id="total">Loading…</div><div class="sub">Source inventory records</div></div>
 <div class="card"><div class="label">Mapped plants</div><div class="value" id="mapped">—</div><div class="sub">Records with usable coordinates</div></div>
 <div class="card"><div class="label">Fuel categories</div><div class="value" id="fuels">—</div><div class="sub">Primary fuel types in dataset</div></div>
 <div class="card"><div class="label">States / UTs mapped</div><div class="value" id="states">—</div><div class="sub">Political boundary match</div></div>
 </section>
+<section class="insight-grid" id="analytics">
+  <article class="panel chart-panel">
+    <div class="chart-head"><div><div class="section-kicker">Fuel composition</div><h2>Installed capacity by fuel</h2><p class="hint">Sum of listed capacity values in the loaded inventory.</p></div><span class="chart-pill">MW</span></div>
+    <div class="chart-wrap"><canvas id="fuelCapacityChart" aria-label="Installed capacity by fuel type"></canvas></div>
+    <p class="chart-note">Only records with a numeric capacity contribute; this is listed capacity, not actual generation.</p>
+  </article>
+  <article class="panel chart-panel">
+    <div class="chart-head"><div><div class="section-kicker">Geographic leaders</div><h2>Top states by station count</h2><p class="hint">Ranked by geolocated inventory records.</p></div><span class="chart-pill">TOP 10</span></div>
+    <div class="chart-wrap"><canvas id="stateCountChart" aria-label="Top states by station count"></canvas></div>
+    <p class="chart-note">State assignment is based on coordinates and the displayed boundary dataset.</p>
+  </article>
+  <article class="panel chart-panel">
+    <div class="chart-head"><div><div class="section-kicker">Station profile</div><h2>Stations by size</h2><p class="hint">Capacity bands for records with known MW values.</p></div><span class="chart-pill">PLANTS</span></div>
+    <div class="chart-wrap"><canvas id="stationSizeChart" aria-label="Stations by installed capacity size"></canvas></div>
+    <p class="chart-note">Bands are descriptive categories; records without capacity are excluded from this chart.</p>
+  </article>
+  <article class="panel chart-panel">
+    <div class="chart-head"><div><div class="section-kicker">Historical generation</div><h2>Year-wise electricity generation</h2><p class="hint">Annual generation reported by the historical WRI inventory.</p></div><span class="chart-pill">GWh</span></div>
+    <div class="chart-wrap"><canvas id="yearTrendChart" aria-label="Annual electricity generation trend from 2013 to 2019"></canvas></div>
+    <p class="chart-note">Source: WRI Global Power Plant Database v1.3.0. Shows only years with reported station-level generation (2013–2019); coverage varies by station and year and is not India's complete national generation series.</p>
+  </article>
+</section>
 <div class="layout">
 <div>
-<section class="panel">
+<section class="panel" id="mapPanel">
 <h2>Power plant locations across India</h2><p class="hint">Political state boundaries with plant markers. Select a marker for plant name, fuel, capacity and owner. Use fuel and status filters to declutter.</p>
 <div class="maptools">
 <select id="mapFuel"><option value="">All fuels</option></select>
@@ -57,8 +109,8 @@ main{max-width:1440px;margin:18px auto;padding:0 15px 36px}
 <div id="loadError"></div>
 <div class="status" id="loadStatus">Loading plant inventory and state boundaries. An internet connection is required.</div>
 </section>
-<section class="panel" style="margin-top:13px">
-<h2>Complete plant inventory</h2><p class="hint">Search and filter all retained electricity-generation station records after strict industrial-sector exclusion. Click column headings to sort. State is assigned from coordinates where available.</p>
+<section class="panel" id="inventory" style="margin-top:13px">
+<h2>Complete plant inventory</h2><p class="hint">Search and filter all available electricity-generation station records, including industrial, captive and co-generation facilities. Click column headings to sort. State is assigned from coordinates where available.</p>
 <div class="filters"><input id="search" placeholder="Search plant name, owner, fuel, state…"><select id="fuelFilter"><option value="">All fuel types</option></select><select id="stateFilter"><option value="">All states / UTs</option></select><select id="coordFilter"><option value="">All coordinate status</option><option value="yes">Coordinates available</option><option value="no">Coordinates missing</option></select></div>
 <div class="tablewrap"><table><thead><tr>
 <th data-k="name">Plant name</th><th data-k="state">State / UT</th><th data-k="fuel">Primary fuel</th><th data-k="capacity" class="num">Capacity MW</th><th data-k="owner">Owner</th><th data-k="year" class="num">Commissioning year</th><th data-k="lat" class="num">Latitude</th><th data-k="lon" class="num">Longitude</th>
@@ -66,37 +118,40 @@ main{max-width:1440px;margin:18px auto;padding:0 15px 36px}
 </section>
 </div>
 <aside class="sidebar">
-<section class="panel"><h2>State-wise plant count</h2><p class="hint">Descending order · Counted from geolocated records in this inventory.</p><div id="stateCounts" class="state-list">Waiting for data…</div></section>
-<section class="panel"><h2>Fuel-wise inventory</h2><p class="hint">Primary fuel classification.</p><div id="fuelCounts" class="fuel-list"></div></section>
-<section class="panel"><h2>Data notes</h2><div class="source">
+<section class="panel" id="statePanel"><h2>State-wise plant count</h2><p class="hint">Descending order · Counted from geolocated records in this inventory.</p><div id="stateCounts" class="state-list">Waiting for data…</div></section>
+<section class="panel" id="fuelPanel"><h2>Fuel-wise inventory</h2><p class="hint">Primary fuel classification.</p><div id="fuelCounts" class="fuel-list"></div></section>
+<section class="panel" id="dataNotes"><h2>Data notes</h2><div class="source">
 <ul style="padding-left:17px;margin:7px 0">
 <li>WRI GPPD v1.3.0 is historical and no longer maintained.</li>
 <li>Generation history in the source is mainly 2013–2019; it is not FY 2024–25 generation.</li>
 <li>Missing coordinates prevent state assignment and map display.</li>
-<li>Industrial-sector records are excluded whether the sector appears in the plant name or owner name; no exception is made for CPP/captive/co-generation wording.</li><li>Excluded industrial records: <b id="excludedCount">calculated on load</b>. Category breakdown:</li><div id="exclusionBreakdown" class="state-list">Calculated when data loads.</div>
+<li>Industrial, captive and co-generation records are included where present in the source data; they are not screened out.</li>
 <li>Renewable projects are represented as individual records where present; the live VEDAS map also provides district-level renewable counts.</li>
 </ul>
 <b>Official cross-check:</b> ISRO–NITI Energy Map provides separate conventional and renewable plant layers; CEA's National Data Registry lists generating units by project, unit, fuel, state and status. These official sources are linked below for reconciliation. Their records can include industrial captive generators, so sector screening is still applied here.
 </div></section>
 </aside>
 </div>
-<section class="panel" style="margin-top:13px"><h2>Sources</h2><div class="source">
+<section class="panel source-card" id="sources" style="margin-top:13px"><h2>Sources</h2><div class="source">
 1. <a href="https://www.listbase.org/en/environment/in-power-plants/" target="_blank" rel="noopener">ListBase India Power Plants download page</a> — 1,589 records advertised; data source WRI GPPD v1.3.0; CSV served from its CDN.<br>
 2. <a href="https://github.com/wri/global-power-plant-database" target="_blank" rel="noopener">WRI Global Power Plant Database</a> — fields include plant name, fuel, capacity, coordinates, owner, source and historical generation; WRI says the database is not currently maintained.<br>
 3. <a href="https://vedas.sac.gov.in/energymap/view/powergis.jsp" target="_blank" rel="noopener">ISRO–NITI Aayog Geospatial Energy Map of India</a> — conventional plant layers, renewable project layers and state-wise search.<br>
-4. <a href="https://egen.cea.gov.in/genreport.aspx" target="_blank" rel="noopener">CEA National Data Registry for Generating Units</a> — project/unit/fuel/state/status register; includes captive units, which are removed here when linked to industrial owners or sites.<br>
+4. <a href="https://egen.cea.gov.in/genreport.aspx" target="_blank" rel="noopener">CEA National Data Registry for Generating Units</a> — project/unit/fuel/state/status register; includes captive and industrial generating units.<br>
 5. <a href="https://cea.nic.in/reports/external/daily-generation?lang=en" target="_blank" rel="noopener">CEA Generation Reports</a> — station-wise generation reports.<br>
 </div></section>
 </main>
+</div></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6.5.0/turf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
 const CSV_URL="https://cdn.en.listbase.org/environment/in-power-plants_EN.csv";
+const GENERATION_URL="https://raw.githubusercontent.com/wri/global-power-plant-database/master/output_database/global_power_plant_database.csv";
 const CEA_CSV_URL="data/cea_additions.csv";
 const GEO_URL="https://raw.githubusercontent.com/geohacker/india/master/state/india_state.geojson";
 const colors={Coal:"#4b5563",Gas:"#e08b28",Hydro:"#2476d2",Nuclear:"#7b4cc2",Solar:"#e0ad22",Wind:"#1b9b79",Biomass:"#a36a38",Oil:"#bd4b4b",Waste:"#8c6cae",Geothermal:"#cf6a9b",Other:"#7b8798"};
-let plants=[],geo=null,markers=[],map=null,layer=null,sortKey="name",sortDir=1,excludedCount=0;
+let plants=[],geo=null,markers=[],map=null,layer=null,sortKey="name",sortDir=1,charts={};
 const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
 const val=(r,keys)=>{for(const k of keys){if(r[k]!=null&&String(r[k]).trim()!=="")return r[k]}const target=keys.map(norm);for(const k of Object.keys(r)){if(target.includes(norm(k))&&String(r[k]||"").trim()!=="")return r[k]}return ""};
 const num=v=>{let n=parseFloat(String(v??"").replace(/,/g,""));return Number.isFinite(n)?n:null};
@@ -105,7 +160,15 @@ const fmt=n=>n==null?"—":Number(n).toLocaleString("en-IN",{maximumFractionDigi
 function fuelGroup(f){let x=String(f||"Other").toLowerCase();if(x.includes("coal")||x.includes("lignite"))return "Coal";if(x.includes("gas"))return "Gas";if(x.includes("hydro"))return "Hydro";if(x.includes("nuclear"))return "Nuclear";if(x.includes("solar"))return "Solar";if(x.includes("wind"))return "Wind";if(x.includes("biomass")||x.includes("bagasse"))return "Biomass";if(x.includes("oil")||x.includes("diesel"))return "Oil";if(x.includes("waste"))return "Waste";return "Other"}
 function stateName(feature){let p=feature.properties||{};return p.st_nm||p.NAME_1||p.name_1||p.NAME_0||p.state||p.NAME||p.State||"Unknown"}
 function assignStates(){const features=geo.features||[];plants.forEach(p=>{if(!p.state)p.state="Unassigned";if(p.lat==null||p.lon==null)return;let pt=turf.point([p.lon,p.lat]);for(const f of features){try{if(turf.booleanPointInPolygon(pt,f)){p.state=stateName(f);break}}catch(e){}}});}
-function initMap(){map=L.map("map").setView([22.8,79.2],4.6);L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);layer=L.geoJSON(geo,{style:{color:"#53657f",weight:1,fillColor:"#e9eef5",fillOpacity:.16}}).addTo(map);drawMarkers();map.fitBounds(layer.getBounds(),{padding:[10,10]});}
+function initMap(){
+ map=L.map("map").setView([22.8,79.2],4.6);
+ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:"© OpenStreetMap contributors"}).addTo(map);
+ const counts={};plants.forEach(p=>{if(p.state&&p.state!=="Unassigned")counts[p.state]=(counts[p.state]||0)+1});
+ const max=Math.max(1,...Object.values(counts));
+ const shade=n=>{const t=n/max;return t>.75?"#0879c9":t>.5?"#13a6b5":t>.25?"#54c88a":t>0?"#b8df63":"#e6edf4"};
+ layer=L.geoJSON(geo,{style:feature=>{const n=counts[stateName(feature)]||0;return {color:"#ffffff",weight:1.3,fillColor:shade(n),fillOpacity:.78}},onEachFeature:(feature,l)=>{const n=counts[stateName(feature)]||0;l.bindTooltip(`${esc(stateName(feature))}: ${n.toLocaleString("en-IN")} listed stations`);}}).addTo(map);
+ drawMarkers();map.fitBounds(layer.getBounds(),{padding:[10,10]});
+}
 function popup(p){return `<b>${esc(p.name)}</b><br>${esc(p.state)}<br><span>${esc(p.rawFuel||p.fuel)}</span><br>Capacity: ${fmt(p.capacity)} MW<br>Owner: ${esc(p.owner||"Not listed")}<br>Commissioned: ${esc(p.year||"Not listed")}<br><small>${esc(p.source||"WRI GPPD v1.3.0")}</small>`}
 function drawMarkers(){if(!map)return;markers.forEach(m=>map.removeLayer(m));markers=[];let f=document.getElementById("mapFuel").value,s=document.getElementById("mapState").value,st=document.getElementById("mapStatus").value;
 plants.forEach(p=>{if(st==="unmapped"||p.lat==null||p.lon==null)return;if(f&&p.fuel!==f)return;if(s&&p.state!==s)return;let color=colors[p.fuel]||colors.Other;let m=L.circleMarker([p.lat,p.lon],{radius:5,weight:1,color:"#fff",fillColor:color,fillOpacity:.9}).bindPopup(popup(p));m.addTo(map);markers.push(m)});document.getElementById("loadStatus").textContent=`Showing ${markers.length.toLocaleString("en-IN")} plant markers. ${plants.length.toLocaleString("en-IN")} records loaded; ${plants.filter(p=>p.lat!=null&&p.lon!=null).length.toLocaleString("en-IN")} have coordinates.`}
@@ -113,54 +176,87 @@ function populateFilters(){let fuels=[...new Set(plants.map(p=>p.fuel))].sort(),
 function sidePanels(){let mapped=plants.filter(p=>p.state!=="Unassigned");let counts={};mapped.forEach(p=>counts[p.state]=(counts[p.state]||0)+1);let sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);let max=sorted[0]?.[1]||1;document.getElementById("stateCounts").innerHTML=sorted.map(([s,n])=>`<div class="state-row"><span class="state-name">${esc(s)}</span><span class="statebar"><i style="width:${n/max*100}%"></i></span><span class="state-num">${n}</span></div>`).join("")+`<div class="status">Unassigned / no coordinate match: ${plants.length-mapped.length}</div>`;
 let fc={};plants.forEach(p=>fc[p.fuel]=(fc[p.fuel]||0)+1);document.getElementById("fuelCounts").innerHTML=Object.entries(fc).sort((a,b)=>b[1]-a[1]).map(([f,n])=>`<span class="chip"><b>${esc(f)}</b> ${n.toLocaleString("en-IN")}</span>`).join("");document.getElementById("legend").innerHTML=Object.entries(colors).map(([f,c])=>`<span><i class="dot" style="background:${c}"></i>${f}</span>`).join("");}
 function renderTable(){let q=document.getElementById("search").value.toLowerCase(),f=document.getElementById("fuelFilter").value,s=document.getElementById("stateFilter").value,c=document.getElementById("coordFilter").value;let arr=plants.filter(p=>(!f||p.fuel===f)&&(!s||p.state===s)&&(!c||(c==="yes"?(p.lat!=null&&p.lon!=null):(p.lat==null||p.lon==null)))&&[p.name,p.state,p.rawFuel,p.owner,p.fuel].join(" ").toLowerCase().includes(q));arr.sort((a,b)=>{let x=a[sortKey],y=b[sortKey];if(x==null)return 1;if(y==null)return -1;return (typeof x==="number"&&typeof y==="number"?x-y:String(x).localeCompare(String(y)))*sortDir});document.getElementById("rows").innerHTML=arr.map(p=>`<tr><td><b>${esc(p.name)}</b></td><td>${esc(p.state)}</td><td><span class="tag">${esc(p.rawFuel||p.fuel)}</span></td><td class="num">${fmt(p.capacity)}</td><td>${esc(p.owner||"—")}</td><td class="num">${esc(p.year||"—")}</td><td class="num">${fmt(p.lat)}</td><td class="num">${fmt(p.lon)}</td></tr>`).join("");document.getElementById("tableStatus").textContent=`Showing ${arr.length.toLocaleString("en-IN")} of ${plants.length.toLocaleString("en-IN")} records.`}
-const INDUSTRY_RULES=[
- ["Cement",/\b(cement|clinker|cement works|cement plant)\b/i],
- ["Steel & iron",/\b(steel|sponge iron|iron works|iron ore|pig iron|ferro alloy|ferroalloy|alloy steel|rolling mill|foundry|smelter)\b/i],
- ["Mining & minerals",/\b(mine|mining|colliery|coal washery|mineral|bauxite|limestone|quarry)\b/i],
- ["Oil, gas & refining",/\b(refinery|petroleum|petrochemical|oil terminal|gas processing|lng terminal|lpg bottling)\b/i],
- ["Chemicals & fertilisers",/\b(chemical|fertili[sz]er|ammonia|urea|chlor.?alkali|caustic soda|pharma|pharmaceutical|pesticide)\b/i],
- ["Paper, pulp & packaging",/\b(paper mill|paper plant|pulp|kraft|board mill|packaging mill)\b/i],
- ["Sugar & distillery",/\b(sugar mill|sugar factory|sugar works|distillery|ethanol plant|molasses)\b/i],
- ["Textiles & manufacturing",/\b(textile|spinning mill|weaving|fabric|garment|industrial park|industrial estate|manufacturing|factory|works)\b/i],
- ["Metals & aluminium",/\b(aluminium|aluminum|copper|zinc|lead|metal plant|metal works)\b/i],
- ["Transport & infrastructure",/\b(port|dock|airport|railway workshop|locomotive works|steel plant township)\b/i],
- ["Other industrial",/\b(tyre|tire|rubber|automobile|auto plant|engineering works|glass works|ceramic|refractory|food processing|brewery|distillery|fertiliser complex)\b/i]
-];
-function industrialCategory(name,owner){
- const t=String(name||"")+" "+String(owner||"");
- for(const [category,re] of INDUSTRY_RULES) if(re.test(t)) return category;
- return "";
+function renderCharts(){
+ if(typeof Chart==="undefined")return;
+ Object.values(charts).forEach(c=>c.destroy());charts={};
+ const palette=["#f28b25","#1686cf","#1aa66d","#7652d6","#e0b12f","#d83d83","#13a6b5","#9a6b42","#7b8798","#55a6e8"];
+ const capacityByFuel={};plants.forEach(p=>{if(p.capacity!=null&&p.capacity>0)capacityByFuel[p.fuel]=(capacityByFuel[p.fuel]||0)+p.capacity});
+ const fuelEntries=Object.entries(capacityByFuel).sort((a,b)=>b[1]-a[1]);
+ const common={responsive:true,maintainAspectRatio:false,plugins:{legend:{labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${Number(ctx.raw).toLocaleString("en-IN",{maximumFractionDigits:1})}`}}}};
+ if(fuelEntries.length){charts.fuel=new Chart(document.getElementById("fuelCapacityChart"),{type:"doughnut",data:{labels:fuelEntries.map(x=>x[0]),datasets:[{data:fuelEntries.map(x=>+x[1].toFixed(2)),backgroundColor:palette,borderColor:"#fff",borderWidth:3,hoverOffset:7}]},options:{...common,cutout:"64%",plugins:{...common.plugins,legend:{position:"bottom",labels:{...common.plugins.legend.labels,padding:12}}}}});}
+ const stateCounts={};plants.forEach(p=>{if(p.state&&p.state!=="Unassigned")stateCounts[p.state]=(stateCounts[p.state]||0)+1});
+ const topStates=Object.entries(stateCounts).sort((a,b)=>b[1]-a[1]).slice(0,10).reverse();
+ charts.states=new Chart(document.getElementById("stateCountChart"),{type:"bar",data:{labels:topStates.map(x=>x[0]),datasets:[{data:topStates.map(x=>x[1]),backgroundColor:topStates.map((_,i)=>`hsl(${198+i*9} 72% ${48+i*1.5}%)`),borderRadius:6,borderSkipped:false}]},options:{indexAxis:"y",responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.raw.toLocaleString("en-IN")} stations`}}},scales:{x:{beginAtZero:true,grid:{color:"#edf2f7"},ticks:{font:{size:9}}},y:{grid:{display:false},ticks:{font:{size:9}}}}}});
+ const bands=[["Under 100 MW",0,100],["100–499 MW",100,500],["500–999 MW",500,1000],["1,000 MW+",1000,Infinity]];
+ const bandCounts=bands.map(([label,lo,hi])=>plants.filter(p=>p.capacity!=null&&p.capacity>0&&p.capacity>=lo&&p.capacity<hi).length);
+ charts.sizes=new Chart(document.getElementById("stationSizeChart"),{type:"bar",data:{labels:bands.map(x=>x[0]),datasets:[{data:bandCounts,backgroundColor:["#17a6b5","#1686cf","#7652d6","#f28b25"],borderRadius:7,borderSkipped:false}]},options:{...common,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.raw.toLocaleString("en-IN")} stations`}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,grid:{color:"#edf2f7"},ticks:{font:{size:9}}}}}});
+ const years=[2013,2014,2015,2016,2017,2018,2019];
+ const yearly=years.map(year=>{let values=plants.map(p=>p.generationByYear?.[year]).filter(v=>v!=null&&Number.isFinite(v));return {year,total:values.reduce((a,b)=>a+b,0),stations:values.length}});
+ const trendHasData=yearly.some(x=>x.stations>0);
+ if(trendHasData){
+   charts.trend=new Chart(document.getElementById("yearTrendChart"),{type:"line",data:{labels:yearly.map(x=>x.year),datasets:[{label:"Reported generation",data:yearly.map(x=>x.stations?+x.total.toFixed(2):null),borderColor:"#087fc4",backgroundColor:"rgba(8,127,196,.13)",fill:true,tension:.32,pointRadius:4,pointHoverRadius:6,spanGaps:false},{label:"Stations reporting",data:yearly.map(x=>x.stations),borderColor:"#16a56b",backgroundColor:"#16a56b",borderDash:[5,4],tension:.25,pointRadius:3,yAxisID:"y1"}]},options:{responsive:true,maintainAspectRatio:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"bottom",labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:ctx=>ctx.datasetIndex===0?`Generation: ${Number(ctx.raw).toLocaleString("en-IN")} GWh`:`Stations reporting: ${Number(ctx.raw).toLocaleString("en-IN")}`}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,title:{display:true,text:"Generation (GWh)",font:{size:9}},grid:{color:"#edf2f7"},ticks:{font:{size:9},callback:v=>Number(v).toLocaleString("en-IN")}},y1:{beginAtZero:true,position:"right",title:{display:true,text:"Stations",font:{size:9}},grid:{drawOnChartArea:false},ticks:{font:{size:9}}}}}});
+ }else{document.getElementById("yearTrendChart").replaceWith(Object.assign(document.createElement("div"),{className:"status",textContent:"Historical generation could not be matched to the loaded station inventory. Check the WRI generation source connection; no values have been invented."}));}
 }
-function isIndustrialSiteOnly(name,owner,fuel){return Boolean(industrialCategory(name,owner));}
+
 async function load(){try{
  document.getElementById("loadStatus").textContent="Downloading historical baseline, official CEA additions and state boundaries…";
- let [csvRes,geoRes,ceaRes]=await Promise.all([fetch(CSV_URL),fetch(GEO_URL),fetch(CEA_CSV_URL).catch(()=>null)]);
+ let [csvRes,geoRes,ceaRes,generationRes]=await Promise.all([
+   fetch(CSV_URL),fetch(GEO_URL),fetch(CEA_CSV_URL).catch(()=>null),
+   fetch(GENERATION_URL).catch(()=>null)
+ ]);
  if(!csvRes.ok)throw new Error("Could not download historical baseline CSV (HTTP "+csvRes.status+").");
  if(!geoRes.ok)throw new Error("Could not download state boundary GeoJSON (HTTP "+geoRes.status+").");
  let [csvText,g]=await Promise.all([csvRes.text(),geoRes.json()]);
  let ceaText=(ceaRes&&ceaRes.ok)?await ceaRes.text():"name,state,rawFuel,capacity,owner,year,lat,lon,source,source_as_of\n";
+ let generationText=(generationRes&&generationRes.ok)?await generationRes.text():"";
  geo=g;
  let parsed=Papa.parse(csvText,{header:true,skipEmptyLines:true,dynamicTyping:false});
- let allRows=parsed.data.map(r=>{let name=val(r,["Name","name","Plant Name"]),rawFuel=val(r,["Primary Fuel","primary_fuel","Fuel"]),lat=num(val(r,["Latitude","latitude"])),lon=num(val(r,["Longitude","longitude"])),owner=val(r,["Owner","owner"]);return {name:name||"Unnamed plant",id:val(r,["Gppd Idnr","gppd_idnr"]),capacity:num(val(r,["Capacity Mw","capacity_mw"])),lat,lon,rawFuel:rawFuel||"Other",fuel:fuelGroup(rawFuel),owner,year:val(r,["Commissioning Year","commissioning_year"]),state:"Unassigned",source:"WRI GPPD v1.3.0"}}).filter(p=>p.name);
+ let allRows=parsed.data.map(r=>{let name=val(r,["Name","name","Plant Name"]),rawFuel=val(r,["Primary Fuel","primary_fuel","Fuel"]),lat=num(val(r,["Latitude","latitude"])),lon=num(val(r,["Longitude","longitude"])),owner=val(r,["Owner","owner"]);return {name:name||"Unnamed plant",id:val(r,["Gppd Idnr","gppd_idnr"]),capacity:num(val(r,["Capacity Mw","capacity_mw"])),lat,lon,rawFuel:rawFuel||"Other",fuel:fuelGroup(rawFuel),owner,year:val(r,["Commissioning Year","commissioning_year"]),generationByYear:Object.fromEntries([2013,2014,2015,2016,2017,2018,2019].map(y=>[y,num(val(r,[`generation_gwh_${y}`,`Generation GWh ${y}`]))])),state:"Unassigned",source:"WRI GPPD v1.3.0"}}).filter(p=>p.name);
+
+ // Enrich the ListBase inventory with annual generation from WRI's full GPPD CSV.
+ let generationMatches=0;
+ if(generationText){
+   const genParsed=Papa.parse(generationText,{header:true,skipEmptyLines:true,dynamicTyping:false});
+   const genRows=genParsed.data.filter(r=>{
+     const country=String(val(r,["country","Country","country_long"])).toLowerCase();
+     return country==="ind" || country==="india";
+   });
+   const byId=new Map(),byName=new Map();
+   genRows.forEach(r=>{
+     const id=String(val(r,["gppd_idnr","Gppd Idnr"])).trim();
+     const name=norm(val(r,["name","Name"]));
+     const annual=Object.fromEntries([2013,2014,2015,2016,2017,2018,2019].map(y=>[
+       y,num(val(r,[`generation_gwh_${y}`,`Generation GWh ${y}`]))
+     ]));
+     const item={annual,hasValues:Object.values(annual).some(v=>v!=null)};
+     if(id)byId.set(id,item);
+     if(name)byName.set(name,item);
+   });
+   allRows.forEach(p=>{
+     const match=(p.id&&byId.get(String(p.id).trim()))||byName.get(norm(p.name));
+     if(match&&match.hasValues){
+       p.generationByYear=match.annual;
+       generationMatches++;
+     }
+   });
+ }
  let ceaParsed=Papa.parse(ceaText,{header:true,skipEmptyLines:true,dynamicTyping:false});
  const seen=new Set(allRows.map(p=>norm(p.name)));
  const ceaRows=ceaParsed.data.map(r=>{let name=val(r,["name","station","plant"]),rawFuel=val(r,["rawFuel","fuel","primary_fuel"])||"Other";return {name,id:"CEA-"+norm(name),capacity:num(val(r,["capacity","capacity_mw"])),lat:num(val(r,["lat","latitude"])),lon:num(val(r,["lon","longitude"])),rawFuel,fuel:fuelGroup(rawFuel),owner:val(r,["owner","utility"]),year:val(r,["year","commissioning_year"]),state:val(r,["state"])||"Unassigned",source:val(r,["source"])||"CEA/NPP"}}).filter(p=>p.name&&!seen.has(norm(p.name)));
  allRows=allRows.concat(ceaRows);
- const excludedRows=allRows.filter(p=>isIndustrialSiteOnly(p.name,p.owner,p.rawFuel));
- excludedCount=excludedRows.length;
- const exclusionSummary=INDUSTRY_RULES.map(([category])=>({category,count:excludedRows.filter(p=>industrialCategory(p.name,p.owner)===category).length})).filter(x=>x.count>0);
- document.getElementById('exclusionBreakdown').innerHTML=exclusionSummary.map(x=>'<div class="state-row"><span class="state-name">'+esc(x.category)+'</span><b class="state-num">'+x.count.toLocaleString('en-IN')+'</b></div>').join('')||'No industrial records detected.';
- plants=allRows.filter(p=>!isIndustrialSiteOnly(p.name,p.owner,p.rawFuel));
+ // Keep the full source inventory: industrial, captive and co-generation sites are included.
+ plants=allRows;
  assignStates();
  document.getElementById("total").textContent=plants.length.toLocaleString("en-IN");
- document.getElementById("excludedCount").textContent=excludedCount.toLocaleString("en-IN");
  document.getElementById("mapped").textContent=plants.filter(p=>p.lat!=null&&p.lon!=null).length.toLocaleString("en-IN");
  document.getElementById("fuels").textContent=new Set(plants.map(p=>p.fuel)).size;
  document.getElementById("states").textContent=new Set(plants.filter(p=>p.state!=="Unassigned").map(p=>p.state)).size;
- populateFilters();sidePanels();initMap();renderTable();document.getElementById("loadError").style.display="none";
- document.getElementById("loadStatus").textContent="Loaded "+fmt(plants.length)+" screened records; "+fmt(ceaRows.length)+" additional CEA/NPP records found in the update feed.";
+ populateFilters();sidePanels();renderCharts();initMap();renderTable();document.getElementById("loadError").style.display="none";
+ document.getElementById("loadStatus").textContent="Loaded "+fmt(plants.length)+" records including industrial/captive facilities; "+fmt(ceaRows.length)+" additional CEA/NPP records found in the update feed; "+fmt(generationMatches)+" matched to historical generation records.";
 }catch(e){document.getElementById("loadError").style.display="block";document.getElementById("loadError").textContent=e.message+" Use the source links above to open the full inventory and official live map.";document.getElementById("loadStatus").textContent="Data loading failed. This dashboard needs an internet connection."}}
 ["mapFuel","mapState","mapStatus"].forEach(id=>document.getElementById(id).addEventListener("change",drawMarkers));["search","fuelFilter","stateFilter","coordFilter"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",renderTable));document.querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{let k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1}renderTable()}));
 document.getElementById("downloadCsv").addEventListener("click",()=>{if(!plants.length)return;let head=["Plant","State","Primary fuel","Capacity MW","Owner","Commissioning year","Latitude","Longitude","GPPD ID"];let rows=plants.map(p=>[p.name,p.state,p.rawFuel,p.capacity??"",p.owner,p.year,p.lat??"",p.lon??"",p.id]);let csv=[head,...rows].map(r=>r.map(v=>'"'+String(v??"").replaceAll('"','""')+'"').join(",")).join("\r\n");let a=document.createElement("a");a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.download="india_power_plants_wri_gppd_v1_3.csv";a.click();URL.revokeObjectURL(a.href)});
 load();
+
+document.querySelectorAll(".side-nav a[href^='#']").forEach(a=>a.addEventListener("click",()=>{document.querySelectorAll(".side-nav a").forEach(x=>x.classList.remove("active"));a.classList.add("active")}));
 </script></body></html>
