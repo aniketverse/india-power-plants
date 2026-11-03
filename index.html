@@ -146,7 +146,10 @@ main{max-width:1680px;margin:0 auto;padding:20px clamp(14px,2vw,30px) 40px}.noti
 </div></div>
 <script>
 const CSV_URL="https://cdn.en.listbase.org/environment/in-power-plants_EN.csv";
-const GENERATION_URL="https://raw.githubusercontent.com/wri/global-power-plant-database/master/output_database/global_power_plant_database.csv";
+const GENERATION_URLS=[
+  "https://raw.githubusercontent.com/wri/global-power-plant-database/master/source_databases_csv/database_IND.csv",
+  "https://cdn.jsdelivr.net/gh/wri/global-power-plant-database@master/source_databases_csv/database_IND.csv"
+];
 const CEA_CSV_URL="data/cea_additions.csv";
 const GEO_URL="https://raw.githubusercontent.com/geohacker/india/master/state/india_state.geojson";
 const PAPA_URL="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js";
@@ -156,7 +159,7 @@ const LEAFLET_CSS_URL="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css";
 const colors={Coal:"#4b5563",Gas:"#e08b28",Hydro:"#2476d2",Nuclear:"#7b4cc2",Solar:"#e0ad22",Wind:"#1b9b79",Biomass:"#a36a38",Oil:"#bd4b4b",Waste:"#8c6cae",Geothermal:"#cf6a9b",Other:"#7b8798"};
 let plants=[],geo=null,geoFeatures=[],markers=[],map=null,layer=null,sortKey="name",sortDir=1,charts={};
 let papaPromise=null,chartPromise=null,leafletPromise=null,geoPromise=null,generationPromise=null;
-let stateDataReady=false,generationDataReady=false,tablePage=1;
+let stateDataReady=false,generationDataReady=false,generationSummary=null,tablePage=1;
 const TABLE_PAGE_SIZE=100;
 const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9]/g,"");
 const val=(r,keys)=>{for(const k of keys){if(r[k]!=null&&String(r[k]).trim()!=="")return r[k]}const target=keys.map(norm);for(const k of Object.keys(r)){if(target.includes(norm(k))&&String(r[k]||"").trim()!=="")return r[k]}return ""};
@@ -186,55 +189,101 @@ function renderTable(){let arr=getFilteredRows(),pages=Math.max(1,Math.ceil(arr.
 function chartCommon(){return {responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:ctx=>`${ctx.label}: ${Number(ctx.raw).toLocaleString("en-IN",{maximumFractionDigits:1})}`}}}}}
 function renderBaseCharts(){if(typeof Chart==="undefined")return;const palette=["#f28b25","#1686cf","#1aa66d","#7652d6","#e0b12f","#d83d83","#13a6b5","#9a6b42","#7b8798","#55a6e8"];const capacityByFuel={};plants.forEach(p=>{if(p.capacity!=null&&p.capacity>0)capacityByFuel[p.fuel]=(capacityByFuel[p.fuel]||0)+p.capacity});const fuelEntries=Object.entries(capacityByFuel).sort((a,b)=>b[1]-a[1]);if(charts.fuel)charts.fuel.destroy();if(fuelEntries.length)charts.fuel=new Chart(document.getElementById("fuelCapacityChart"),{type:"doughnut",data:{labels:fuelEntries.map(x=>x[0]),datasets:[{data:fuelEntries.map(x=>+x[1].toFixed(2)),backgroundColor:palette,borderColor:"#fff",borderWidth:3,hoverOffset:7}]},options:{...chartCommon(),cutout:"64%",plugins:{...chartCommon().plugins,legend:{position:"bottom",labels:{...chartCommon().plugins.legend.labels,padding:12}}}}});const bands=[["Under 100 MW",0,100],["100–499 MW",100,500],["500–999 MW",500,1000],["1,000 MW+",1000,Infinity]];const bandCounts=bands.map(([label,lo,hi])=>plants.filter(p=>p.capacity!=null&&p.capacity>0&&p.capacity>=lo&&p.capacity<hi).length);if(charts.sizes)charts.sizes.destroy();charts.sizes=new Chart(document.getElementById("stationSizeChart"),{type:"bar",data:{labels:bands.map(x=>x[0]),datasets:[{data:bandCounts,backgroundColor:["#17a6b5","#1686cf","#7652d6","#f28b25"],borderRadius:7,borderSkipped:false}]},options:{...chartCommon(),plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.raw.toLocaleString("en-IN")} stations`}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,grid:{color:"#edf2f7"},ticks:{font:{size:9}}}}}})}
 function renderStateChart(){if(typeof Chart==="undefined"||!stateDataReady)return;const stateCounts={};plants.forEach(p=>{if(p.state&&p.state!=="Unassigned")stateCounts[p.state]=(stateCounts[p.state]||0)+1});const topStates=Object.entries(stateCounts).sort((a,b)=>b[1]-a[1]).slice(0,10);if(charts.states)charts.states.destroy();charts.states=new Chart(document.getElementById("stateCountChart"),{type:"bar",data:{labels:topStates.map(x=>x[0]),datasets:[{data:topStates.map(x=>x[1]),backgroundColor:topStates.map((_,i)=>`hsl(${198+i*9} 72% ${48+i*1.5}%)`),borderRadius:6,borderSkipped:false}]},options:{indexAxis:"y",responsive:true,maintainAspectRatio:false,animation:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>`${ctx.raw.toLocaleString("en-IN")} stations`}}},scales:{x:{beginAtZero:true,grid:{color:"#edf2f7"},ticks:{font:{size:9}}},y:{grid:{display:false},ticks:{font:{size:9}}}}}})}
-function renderTrendChart(){if(typeof Chart==="undefined"||!generationDataReady)return;const years=[2013,2014,2015,2016,2017,2018,2019];const yearly=years.map(year=>{let values=plants.map(p=>p.generationByYear?.[year]).filter(v=>v!=null&&Number.isFinite(v));return {year,total:values.reduce((a,b)=>a+b,0),stations:values.length}});const trendHasData=yearly.some(x=>x.stations>0);if(charts.trend)charts.trend.destroy();const canvas=document.getElementById("yearTrendChart");if(!trendHasData){document.getElementById("trendStatus").textContent="No matching historical generation records were found. No values have been invented.";return}document.getElementById("trendStatus").textContent="Historical generation loaded on demand from WRI GPPD v1.3.0.";charts.trend=new Chart(canvas,{type:"line",data:{labels:yearly.map(x=>x.year),datasets:[{label:"Reported generation",data:yearly.map(x=>x.stations?+x.total.toFixed(2):null),borderColor:"#087fc4",backgroundColor:"rgba(8,127,196,.13)",fill:true,tension:.32,pointRadius:4,pointHoverRadius:6,spanGaps:false},{label:"Stations reporting",data:yearly.map(x=>x.stations),borderColor:"#16a56b",backgroundColor:"#16a56b",borderDash:[5,4],tension:.25,pointRadius:3,yAxisID:"y1"}]},options:{responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:"index",intersect:false},plugins:{legend:{position:"bottom",labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},tooltip:{callbacks:{label:ctx=>ctx.datasetIndex===0?`Generation: ${Number(ctx.raw).toLocaleString("en-IN")} GWh`:`Stations reporting: ${Number(ctx.raw).toLocaleString("en-IN")}`}}},scales:{x:{grid:{display:false},ticks:{font:{size:9}}},y:{beginAtZero:true,title:{display:true,text:"Generation (GWh)",font:{size:9}},grid:{color:"#edf2f7"},ticks:{font:{size:9},callback:v=>Number(v).toLocaleString("en-IN")}},y1:{beginAtZero:true,position:"right",title:{display:true,text:"Stations",font:{size:9}},grid:{drawOnChartArea:false},ticks:{font:{size:9}}}}}})}
+function renderTrendChart(){
+  if(typeof Chart==="undefined"||!generationDataReady||!generationSummary)return;
+  const yearly=generationSummary;
+  const years=yearly.map(x=>x.year);
+  if(charts.trend)charts.trend.destroy();
+  const canvas=document.getElementById("yearTrendChart");
+  const hasData=yearly.some(x=>x.stations>0&&Number.isFinite(x.total));
+  if(!hasData){
+    document.getElementById("trendStatus").textContent="The India WRI source contains no numeric annual generation records.";
+    return;
+  }
+  document.getElementById("trendStatus").textContent=
+    "Historical generation loaded from the WRI India-only dataset. Figures are GWh reported for individual stations; reporting coverage varies by year.";
+  charts.trend=new Chart(canvas,{
+    type:"line",
+    data:{
+      labels:years,
+      datasets:[
+        {label:"Reported generation",data:yearly.map(x=>x.stations?+x.total.toFixed(2):null),borderColor:"#087fc4",backgroundColor:"rgba(8,127,196,.13)",fill:true,tension:.32,pointRadius:4,pointHoverRadius:6,spanGaps:false},
+        {label:"Stations reporting",data:yearly.map(x=>x.stations),borderColor:"#16a56b",backgroundColor:"#16a56b",borderDash:[5,4],tension:.25,pointRadius:3,yAxisID:"y1"}
+      ]
+    },
+    options:{
+      responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:"index",intersect:false},
+      plugins:{
+        legend:{position:"bottom",labels:{boxWidth:10,usePointStyle:true,font:{size:10}}},
+        tooltip:{callbacks:{label:ctx=>ctx.datasetIndex===0?`Generation: ${Number(ctx.raw).toLocaleString("en-IN")} GWh`:`Stations reporting: ${Number(ctx.raw).toLocaleString("en-IN")}`}}
+      },
+      scales:{
+        x:{grid:{display:false},ticks:{font:{size:9}}},
+        y:{beginAtZero:true,title:{display:true,text:"Generation (GWh)",font:{size:9}},grid:{color:"#edf2f7"},ticks:{font:{size:9},callback:v=>Number(v).toLocaleString("en-IN")}},
+        y1:{beginAtZero:true,position:"right",title:{display:true,text:"Stations",font:{size:9}},grid:{drawOnChartArea:false},ticks:{font:{size:9}}}
+      }
+    }
+  });
+}
 function loadGenerationData(){
-  if(generationDataReady)return Promise.resolve(0);
+  if(generationDataReady)return Promise.resolve(generationSummary);
   if(generationPromise)return generationPromise;
   const status=document.getElementById("trendStatus");
-  status.textContent="Loading historical WRI generation data for this chart…";
+  status.textContent="Loading the compact India-only historical generation dataset…";
   generationPromise=(async()=>{
     try{
-      // Use the same fetch + text parsing path as the earlier working dashboard.
-      // Keep this request deferred until the Analytics section is near the viewport.
-      const response=await fetch(GENERATION_URL,{cache:"force-cache",mode:"cors"});
-      if(!response.ok)throw new Error("WRI data request failed (HTTP "+response.status+").");
-      const generationText=await response.text();
-      if(!generationText||!generationText.toLowerCase().includes("generation_gwh_2013")){
-        throw new Error("The WRI file did not contain the expected annual generation columns.");
+      let generationText="";
+      let sourceUsed="";
+      let lastError=null;
+      for(const url of GENERATION_URLS){
+        try{
+          const response=await fetch(url,{cache:"force-cache",mode:"cors"});
+          if(!response.ok)throw new Error("HTTP "+response.status+" from "+url);
+          const candidate=await response.text();
+          if(!candidate||!candidate.toLowerCase().includes("generation_gwh_2013"))
+            throw new Error("The downloaded file does not contain the expected WRI annual-generation columns.");
+          generationText=candidate;
+          sourceUsed=url;
+          break;
+        }catch(error){lastError=error;console.warn("WRI India source attempt failed:",url,error);}
       }
+      if(!generationText)throw new Error("Could not download the WRI India generation file. "+(lastError?.message||"Please retry."));
       const parsed=Papa.parse(generationText,{header:true,skipEmptyLines:true,dynamicTyping:false});
-      if(parsed.errors?.length)console.warn("WRI generation CSV parse warnings:",parsed.errors.slice(0,3));
-      const byId=new Map(),byName=new Map();
+      if(parsed.errors?.length)console.warn("WRI India CSV parse warnings:",parsed.errors.slice(0,3));
+      const years=[2013,2014,2015,2016,2017,2018,2019];
+      const totals=Object.fromEntries(years.map(year=>[year,{year,total:0,stations:0}]));
+      const seen=new Set();
       for(const row of parsed.data){
         const country=String(val(row,["country","Country","country_long"])).trim().toLowerCase();
         if(country!=="ind"&&country!=="india")continue;
         const id=String(val(row,["gppd_idnr","Gppd Idnr"])).trim();
         const name=norm(val(row,["name","Name"]));
-        const annual=Object.fromEntries([2013,2014,2015,2016,2017,2018,2019].map(year=>[
-          year,num(val(row,[`generation_gwh_${year}`,`Generation GWh ${year}`]))
-        ]));
-        const hasValues=Object.values(annual).some(value=>value!==null);
-        if(!hasValues)continue;
-        const item={annual,hasValues:true};
-        if(id)byId.set(id,item);
-        if(name)byName.set(name,item);
+        const key=id||name;
+        if(!key||seen.has(key))continue;
+        seen.add(key);
+        for(const year of years){
+          const value=num(val(row,[`generation_gwh_${year}`,`Generation GWh ${year}`]));
+          if(value!==null){totals[year].total+=value;totals[year].stations++;}
+        }
       }
-      let matches=0;
-      plants.forEach(plant=>{
-        const match=(plant.id&&byId.get(String(plant.id).trim()))||byName.get(norm(plant.name));
-        if(match?.hasValues){plant.generationByYear=match.annual;matches++;}
-      });
-      if(matches===0)throw new Error("WRI data loaded, but no Indian inventory stations matched by ID or name.");
+      generationSummary=years.map(year=>totals[year]);
+      const reportingYears=generationSummary.filter(x=>x.stations>0);
+      if(!reportingYears.length)throw new Error("The India file downloaded, but it contained no numeric generation observations for 2013–2019.");
       generationDataReady=true;
-      status.textContent=`Historical data matched to ${matches.toLocaleString("en-IN")} inventory records.`;
+      const stationCounts=reportingYears.map(x=>x.stations);
+      const maxStations=Math.max(...stationCounts);
+      status.textContent=`Historical generation loaded: ${reportingYears.length} reporting years; up to ${maxStations.toLocaleString("en-IN")} Indian stations in a year. Source: WRI India dataset.`;
       if(window.Chart)renderTrendChart();
-      return matches;
+      console.info("WRI India generation source:",sourceUsed,"Rows:",parsed.data.length,"Year summary:",generationSummary);
+      return generationSummary;
     }catch(error){
-      generationPromise=null; // Allow the user to retry after a network or CDN failure.
+      generationPromise=null;
       status.innerHTML='Historical generation could not be loaded: '+esc(error.message)+' <button type="button" id="retryTrend" style="margin-left:6px;padding:4px 9px;border:1px solid #9bb6cf;border-radius:6px;background:#fff;color:#17446c;cursor:pointer">Retry</button>';
       const retry=document.getElementById("retryTrend");
       if(retry)retry.addEventListener("click",()=>{
-        ensurePapa().then(ensureCharts).then(loadGenerationData).catch(err=>console.warn("Historical generation retry:",err));
+        retry.disabled=true;
+        retry.textContent="Retrying…";
+        Promise.all([ensurePapa(),ensureCharts()]).then(loadGenerationData).catch(err=>console.warn("Historical generation retry:",err));
       },{once:true});
       console.warn("Historical generation load failed:",error);
       throw error;
@@ -243,7 +292,15 @@ function loadGenerationData(){
   return generationPromise;
 }
 function observeOnce(el,callback,rootMargin="250px"){if(!el)return;if(!("IntersectionObserver" in window)){callback();return}const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){observer.disconnect();callback()}},{rootMargin});observer.observe(el)}
-function setupLazySections(){observeOnce(document.querySelector(".insight-grid"),()=>ensureCharts().catch(e=>console.warn(e)),"300px");observeOnce(document.getElementById("stateCountChart"),()=>ensureStateData().then(()=>ensureCharts()).catch(e=>console.warn(e)),"350px");observeOnce(document.getElementById("analytics"),()=>Promise.all([ensurePapa(),ensureCharts()]).then(loadGenerationData).catch(e=>console.warn(e)),"300px");observeOnce(document.getElementById("mapPanel"),()=>initMap(),"300px")} 
+function setupLazySections(){
+  observeOnce(document.querySelector(".insight-grid"),()=>ensureCharts().catch(e=>console.warn(e)),"300px");
+  observeOnce(document.getElementById("stateCountChart"),()=>ensureStateData().then(()=>ensureCharts()).catch(e=>console.warn(e)),"350px");
+  const startTrend=()=>Promise.all([ensurePapa(),ensureCharts()]).then(loadGenerationData).catch(e=>console.warn("Yearly trend initialisation:",e));
+  observeOnce(document.getElementById("yearTrendChart"),startTrend,"700px");
+  const trendLink=document.querySelector('.side-nav a[href="#yearTrendChart"]');
+  if(trendLink&&!trendLink.dataset.trendBound){trendLink.dataset.trendBound="true";trendLink.addEventListener("click",startTrend);}
+  observeOnce(document.getElementById("mapPanel"),()=>initMap(),"300px");
+} 
 async function load(){try{const status=document.getElementById("loadStatus");status.textContent="Loading the station inventory…";await ensurePapa();const [csvRes,ceaRes]=await Promise.all([fetch(CSV_URL,{cache:"force-cache"}),fetch(CEA_CSV_URL,{cache:"no-cache"}).catch(()=>null)]);if(!csvRes.ok)throw new Error("Could not download historical baseline CSV (HTTP "+csvRes.status+").");const csvText=await csvRes.text();const ceaText=(ceaRes&&ceaRes.ok)?await ceaRes.text():"name,state,rawFuel,capacity,owner,year,lat,lon,source,source_as_of\n";const parsed=Papa.parse(csvText,{header:true,skipEmptyLines:true,dynamicTyping:false});if(parsed.errors?.length)console.warn("Inventory CSV parse warnings:",parsed.errors.slice(0,3));let allRows=parsed.data.map(r=>{const name=val(r,["Name","name","Plant Name"]),rawFuel=val(r,["Primary Fuel","primary_fuel","Fuel"]),lat=num(val(r,["Latitude","latitude"])),lon=num(val(r,["Longitude","longitude"])),owner=val(r,["Owner","owner"]);return {name:name||"Unnamed plant",id:val(r,["Gppd Idnr","gppd_idnr"]),capacity:num(val(r,["Capacity Mw","capacity_mw"])),lat,lon,rawFuel:rawFuel||"Other",fuel:fuelGroup(rawFuel),owner,year:val(r,["Commissioning Year","commissioning_year"]),generationByYear:Object.fromEntries([2013,2014,2015,2016,2017,2018,2019].map(y=>[y,num(val(r,[`generation_gwh_${y}`,`Generation GWh ${y}`]))])),state:"Unassigned",source:"WRI GPPD v1.3.0"}}).filter(p=>p.name&&p.name!=="Unnamed plant");const ceaParsed=Papa.parse(ceaText,{header:true,skipEmptyLines:true,dynamicTyping:false});const seen=new Set(allRows.map(p=>norm(p.name)));const ceaRows=ceaParsed.data.map(r=>{const name=val(r,["name","station","plant"]),rawFuel=val(r,["rawFuel","fuel","primary_fuel"])||"Other";return {name,id:"CEA-"+norm(name),capacity:num(val(r,["capacity","capacity_mw"])),lat:num(val(r,["lat","latitude"])),lon:num(val(r,["lon","longitude"])),rawFuel,fuel:fuelGroup(rawFuel),owner:val(r,["owner","utility"]),year:val(r,["year","commissioning_year"]),state:val(r,["state"])||"Unassigned",source:val(r,["source"])||"CEA/NPP"}}).filter(p=>p.name&&!seen.has(norm(p.name)));plants=allRows.concat(ceaRows);document.getElementById("total").textContent=plants.length.toLocaleString("en-IN");document.getElementById("mapped").textContent=plants.filter(p=>p.lat!=null&&p.lon!=null).length.toLocaleString("en-IN");document.getElementById("fuels").textContent=new Set(plants.map(p=>p.fuel)).size;document.getElementById("states").textContent="…";populateFilters();sidePanels();renderTable();document.getElementById("loadError").style.display="none";status.textContent=`Inventory ready: ${fmt(plants.length)} records, including industrial/captive facilities; ${fmt(ceaRows.length)} CEA/NPP feed additions. Charts, state assignment, historical generation and map load as needed.`;setupLazySections()}catch(e){document.getElementById("loadError").style.display="block";document.getElementById("loadError").textContent=e.message+" Use the source links above to open the full inventory and official live map.";document.getElementById("loadStatus").textContent="Data loading failed. This dashboard needs an internet connection.";console.error(e)}}
 ["mapFuel","mapState","mapStatus"].forEach(id=>document.getElementById(id).addEventListener("change",drawMarkers));["search","fuelFilter","stateFilter","coordFilter"].forEach(id=>document.getElementById(id).addEventListener(id==="search"?"input":"change",()=>{tablePage=1;renderTable()}));document.querySelectorAll("th[data-k]").forEach(th=>th.addEventListener("click",()=>{const k=th.dataset.k;if(sortKey===k)sortDir*=-1;else{sortKey=k;sortDir=1}tablePage=1;renderTable()}));
 document.getElementById("downloadCsv").addEventListener("click",()=>{if(!plants.length)return;const head=["Plant","State","Primary fuel","Capacity MW","Owner","Commissioning year","Latitude","Longitude","GPPD ID"];const rows=plants.map(p=>[p.name,p.state,p.rawFuel,p.capacity??"",p.owner,p.year,p.lat??"",p.lon??"",p.id]);const csv=[head,...rows].map(r=>r.map(v=>'"'+String(v??"").replaceAll('"','""')+'"').join(",")).join("\r\n");const a=document.createElement("a");const url=URL.createObjectURL(new Blob([csv],{type:"text/csv;charset=utf-8"}));a.href=url;a.download="india_power_plants_wri_gppd_v1_3.csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});
