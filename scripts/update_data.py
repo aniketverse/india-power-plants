@@ -85,59 +85,22 @@ def industrial(name, owner):
 def fetch_report_links(html, base_url):
     soup = BeautifulSoup(html, "html.parser")
 
-    targets = {
-        "daily_stationwise": re.compile(
-            r"02\s*Region\s*Wise.*?Station\s*Wise.*?Unit\s*Wise\s*Generation\s*Report",
-            re.I | re.S
-        ),
-        "monthly_stationwise": re.compile(
-            r"16\s*Region\s*wise\s*State\s*wise\s*and\s*Station\s*wise\s*Detail",
-            re.I | re.S
-        ),
-        "installed_capacity": re.compile(
-            r"01\s*All\s*India\s*Installed\s*Capacity\s*of\s*Power\s*Stations",
-            re.I | re.S
-        ),
-    }
-
-    found = {}
-
     for anchor in soup.find_all("a", href=True):
-        link_text = anchor.get_text(" ", strip=True)
-        href = anchor["href"]
+        url = urljoin(base_url, anchor["href"])
+        path = url.split("?", 1)[0].lower()
 
-        is_excel = (
-            re.search(r"\b(xls|excel|xlsx)\b", link_text, re.I)
-            or re.search(r"\.(xlsx?|xlsm)(?:\?|$)", href, re.I)
-        )
+        # Select only CEA Daily Report No. 02:
+        # Region-wise, State-wise and Station-wise generation.
+        if (
+            "/daily/dgr/" in path
+            and re.search(
+                r"/dgr2-\d{4}-\d{2}-\d{2}\.xlsx?$",
+                path
+            )
+        ):
+            return {"daily_stationwise": url}
 
-        if not is_excel:
-            continue
-
-        parent = anchor
-
-        for _ in range(12):
-            if parent is None:
-                break
-
-            context = parent.get_text(" ", strip=True)
-
-            matches = [
-                label for label, pattern in targets.items()
-                if pattern.search(context)
-            ]
-
-            if len(matches) == 1:
-                label = matches[0]
-                found.setdefault(label, urljoin(base_url, href))
-                break
-
-            if len(matches) > 1:
-                break
-
-            parent = parent.parent
-
-    return found
+    return {}
   
 def find_col(headers, patterns):
     for i, h in enumerate(headers):
