@@ -231,28 +231,7 @@ def parse_cea_layout(df, source_label):
         except (TypeError, ValueError):
             continue
 
-        if industrial(name, ""):
-            continue
-
-        sector_text = current_sector.lower()
-
-        is_central_state = bool(re.search(
-            r"\b(central sector|state sector|state government)\b",
-            sector_text
-        ))
-
-        is_utility_ipp = bool(re.search(
-            r"\b(utility|ipp|independent power producer)\b",
-            sector_text
-        ))
-
-        # Some private-sector plant names contain the utility owner.
-        known_owner = any(
-            owner in name.lower() for owner in UTILITY_OWNERS
-        )
-
-        if not (is_central_state or is_utility_ipp or known_owner):
-            continue
+        # Include all CEA-listed stations, regardless of sector or industry.
 
         records.append({
             "name": name,
@@ -312,14 +291,7 @@ def parse_workbook(content, source_label):
             sector = vals[sector_col] if sector_col is not None and sector_col < len(vals) else ""
             raw_fuel = vals[fuel_col] if fuel_col is not None and fuel_col < len(vals) else ""
             capacity = vals[cap_col] if cap_col is not None and cap_col < len(vals) else ""
-            # Avoid including industrial/captive establishments even when they say CPP.
-            if industrial(name, owner): continue
-            sector_l = (sector + " " + owner).lower()
-            is_central_state = bool(re.search(r"\b(central|state sector|state government)\b", sector_l))
-            is_utility_ipp = bool(re.search(r"\b(utility|ipp|independent power producer)\b", sector_l))
-            known_owner = any(x in owner.lower() for x in UTILITY_OWNERS)
-            if not (is_central_state or is_utility_ipp or known_owner):
-                continue
+            # Include all source-listed stations, including industrial and captive plants.
             records.append({
                 "name": name, "state": state, "rawFuel": raw_fuel or source_label,
                 "capacity": re.sub(r"[^0-9.]", "", capacity),
