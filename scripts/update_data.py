@@ -380,6 +380,43 @@ def main():
         try:
             r = session.get(url, timeout=TIMEOUT)
             r.raise_for_status()
+
+            print(f"DEBUG [{label}] requested URL: {url}")
+            print(f"DEBUG [{label}] final URL: {r.url}")
+            print(
+                f"DEBUG [{label}] content-type: "
+                f"{r.headers.get('Content-Type')} | "
+                f"bytes: {len(r.content)} | "
+                f"signature: {r.content[:8]!r}"
+            )
+
+            try:
+                workbook = pd.ExcelFile(io.BytesIO(r.content))
+                print(f"DEBUG [{label}] sheets: {workbook.sheet_names}")
+
+                for sheet in workbook.sheet_names[:2]:
+                    preview = pd.read_excel(
+                        workbook,
+                        sheet_name=sheet,
+                        header=None,
+                        nrows=8,
+                        dtype=str
+                    ).fillna("")
+
+                    for row_no, values in enumerate(
+                        preview.itertuples(index=False, name=None)
+                    ):
+                        print(
+                            f"DEBUG [{label}] {sheet} row {row_no + 1}: "
+                            f"{[clean(x) for x in values[:12]]}"
+                        )
+
+            except Exception as debug_error:
+                print(
+                    f"DEBUG [{label}] workbook preview failed: "
+                    f"{debug_error!r}"
+                )
+
             rows = parse_workbook(r.content, label)
             if rows: collected.extend(rows)
             else: report_errors.append(f"{label}: no station/state table detected")
