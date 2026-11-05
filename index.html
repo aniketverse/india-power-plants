@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Aniketverse | India Electricity Power Stations</title>
+<title>Aniketverse | India Power Plants — Liquid Glass Edition</title>
 <link rel="preconnect" href="https://cdn.en.listbase.org" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="dns-prefetch" href="https://raw.githubusercontent.com">
@@ -132,6 +132,160 @@ tbody tr:hover{background:rgba(216,237,252,.68)}
   .motion-ready .reveal-item{opacity:1;transform:none}
 }
 
+
+/* ── LIQUID GLASS v2: unmistakable visual overhaul ─────────────────── */
+:root{
+  --ink:#142b49;--muted:#617791;--line:rgba(255,255,255,.78);
+  --panel:rgba(255,255,255,.53);
+  --shadow:0 22px 60px rgba(38,75,125,.14),0 5px 16px rgba(38,75,125,.07);
+}
+body{
+  background:
+    radial-gradient(ellipse 42rem 34rem at 5% 4%,rgba(100,190,255,.36),transparent 72%),
+    radial-gradient(ellipse 38rem 32rem at 95% 10%,rgba(157,128,255,.27),transparent 72%),
+    radial-gradient(ellipse 44rem 38rem at 70% 90%,rgba(79,220,190,.22),transparent 72%),
+    linear-gradient(135deg,#e8f2fc 0%,#f7f9ff 46%,#e9f1fb 100%);
+  background-attachment:fixed;
+}
+body:before,body:after{
+  content:"";position:fixed;z-index:-1;pointer-events:none;border-radius:50%;
+  filter:blur(2px);opacity:.55;
+}
+body:before{
+  width:340px;height:340px;top:24%;left:17%;
+  background:radial-gradient(circle at 35% 35%,rgba(255,255,255,.9),rgba(105,190,255,.22) 42%,rgba(105,190,255,0) 72%);
+}
+body:after{
+  width:420px;height:420px;right:2%;bottom:0;
+  background:radial-gradient(circle at 45% 40%,rgba(255,255,255,.8),rgba(155,137,255,.2) 44%,transparent 72%);
+}
+.side-nav{
+  width:204px;padding:18px 12px;
+  background:linear-gradient(155deg,rgba(12,34,68,.88),rgba(17,68,108,.78) 58%,rgba(8,117,139,.72));
+  border:1px solid rgba(255,255,255,.22);border-left:0;border-radius:0 26px 26px 0;
+  box-shadow:16px 0 55px rgba(17,48,87,.18),inset -1px 0 rgba(255,255,255,.12);
+  backdrop-filter:blur(30px) saturate(170%);-webkit-backdrop-filter:blur(30px) saturate(170%);
+}
+.app-content{margin-left:204px}
+.brand-mark{border-radius:14px;background:linear-gradient(145deg,#fff1bd,#ff9c50);box-shadow:0 0 28px rgba(255,183,75,.28)}
+.side-nav a{border:1px solid transparent;border-radius:14px;padding:12px 13px}
+.side-nav a.active{background:linear-gradient(110deg,rgba(70,179,255,.35),rgba(62,224,213,.18));border-color:rgba(255,255,255,.22);box-shadow:inset 0 1px rgba(255,255,255,.22),0 8px 24px rgba(0,20,55,.15)}
+.side-nav a:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.18);transform:translateX(4px)}
+header{
+  min-height:238px;padding:42px clamp(22px,4vw,60px) 38px;
+  background:
+    radial-gradient(ellipse at 82% 18%,rgba(82,218,255,.32),transparent 28%),
+    radial-gradient(ellipse at 62% 110%,rgba(94,230,190,.22),transparent 34%),
+    linear-gradient(118deg,rgba(5,23,51,.98),rgba(12,58,103,.94) 52%,rgba(8,112,139,.9));
+  border-bottom:1px solid rgba(255,255,255,.28);
+  box-shadow:0 18px 55px rgba(9,40,78,.16);
+}
+header:before{
+  background:
+    radial-gradient(circle at 82% 35%,rgba(255,255,255,.14),transparent 23%),
+    radial-gradient(circle at 72% 90%,rgba(65,222,203,.16),transparent 28%),
+    repeating-linear-gradient(125deg,transparent 0 44px,rgba(255,255,255,.025) 45px 46px);
+}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;padding:7px 12px;border-radius:99px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(12px)}
+.hero-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:#69f0cf;box-shadow:0 0 12px #69f0cf}
+.hero-title{font-size:clamp(32px,4vw,54px);letter-spacing:-1.8px;text-shadow:0 5px 25px rgba(0,0,0,.16)}
+.hero-title span{color:#8ce9f0}
+.hero-sub{font-size:14px;color:#d6efff}
+.hero-tags span{padding:7px 12px;background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.24);backdrop-filter:blur(12px)}
+.hero-art{width:min(40%,480px);height:145px;filter:drop-shadow(0 18px 28px rgba(0,0,0,.25))}
+main{padding-top:26px}
+.notice{
+  border-radius:18px;padding:15px 18px;
+  background:linear-gradient(110deg,rgba(255,249,230,.82),rgba(255,255,255,.57));
+  border:1px solid rgba(255,221,157,.75);box-shadow:0 14px 36px rgba(143,111,43,.09);
+  backdrop-filter:blur(22px) saturate(145%);
+}
+.toolbar{gap:10px;margin:16px 0 20px}
+.toolbar a,.toolbar button{
+  padding:11px 15px;border-radius:13px;background:rgba(255,255,255,.58);
+  border:1px solid rgba(255,255,255,.92);color:#214d78;
+  box-shadow:0 8px 22px rgba(40,81,126,.08),inset 0 1px rgba(255,255,255,.95);
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+}
+.toolbar a:first-child{background:linear-gradient(115deg,#126fc0,#168eae);color:white;border-color:rgba(255,255,255,.35);box-shadow:0 10px 24px rgba(18,117,181,.24)}
+.kpis{gap:16px}
+.card{
+  min-height:142px;padding:20px 20px 18px;border-radius:22px;overflow:hidden;
+  color:#173553;background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(255,255,255,.38));
+  border:1px solid rgba(255,255,255,.96);
+  box-shadow:0 18px 42px rgba(40,78,125,.12),inset 0 1px 0 rgba(255,255,255,.95);
+  backdrop-filter:blur(28px) saturate(175%);-webkit-backdrop-filter:blur(28px) saturate(175%);
+}
+.card:nth-child(1),.card:nth-child(2),.card:nth-child(3),.card:nth-child(4){
+  background:linear-gradient(145deg,rgba(255,255,255,.82),rgba(255,255,255,.42));
+}
+.card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:0 5px 5px 0;background:linear-gradient(180deg,#37b9ed,#246bd1)}
+.card:nth-child(2):before{background:linear-gradient(180deg,#b18aff,#7652d6)}
+.card:nth-child(3):before{background:linear-gradient(180deg,#66dfb0,#16a56b)}
+.card:nth-child(4):before{background:linear-gradient(180deg,#ffd27a,#ed8a2b)}
+.card:after{width:190px;height:190px;right:-65px;top:-85px;background:radial-gradient(circle,rgba(255,255,255,.92),rgba(137,200,245,.16) 48%,transparent 70%);border:1px solid rgba(255,255,255,.55)}
+.label{color:#5e7690;text-transform:uppercase;letter-spacing:1px;font-size:10px}
+.value{color:#12375e;font-size:clamp(30px,2.7vw,40px);text-shadow:none}
+.sub{color:#71859b}
+.panel{
+  border-radius:22px;padding:20px;
+  background:linear-gradient(145deg,rgba(255,255,255,.76),rgba(255,255,255,.48));
+  border:1px solid rgba(255,255,255,.94);
+  box-shadow:0 18px 46px rgba(37,76,123,.10),inset 0 1px 0 rgba(255,255,255,.96);
+  backdrop-filter:blur(26px) saturate(165%);-webkit-backdrop-filter:blur(26px) saturate(165%);
+}
+.panel:hover{transform:translateY(-5px);box-shadow:0 28px 62px rgba(37,76,123,.15),inset 0 1px 0 rgba(255,255,255,.98)}
+.panel h2{font-size:17px;color:#16395f}
+.section-kicker{color:#1685b9;letter-spacing:1.8px}
+.chart-panel{min-height:325px}
+.chart-wrap{height:230px}
+.chart-pill{background:rgba(222,241,255,.7);border:1px solid rgba(255,255,255,.95);color:#23648e;padding:7px 11px}
+.insight-grid{gap:16px;margin:18px 0}
+.layout{gap:17px;margin-top:17px;grid-template-columns:minmax(0,1fr) 320px}
+#map{height:590px;border-radius:17px;border:1px solid rgba(255,255,255,.95);box-shadow:0 10px 30px rgba(38,76,120,.1)}
+.sidebar{gap:16px}
+.state-row{padding:9px 3px;border-bottom-color:rgba(183,204,226,.42)}
+.statebar{height:8px;background:rgba(215,229,242,.72)}
+.chip{border-radius:12px;padding:8px 11px;background:rgba(238,247,255,.72);border-color:rgba(255,255,255,.95)}
+.filters{gap:10px;margin:16px 0}
+.filters input,.filters select,.maptools select{
+  border-radius:13px;padding:11px 13px;background:rgba(255,255,255,.72);
+  border:1px solid rgba(255,255,255,.96);box-shadow:0 6px 18px rgba(38,76,120,.06),inset 0 1px 2px rgba(38,76,120,.04);
+  backdrop-filter:blur(14px);
+}
+.tablewrap{border-radius:15px;border:1px solid rgba(255,255,255,.96);background:rgba(255,255,255,.5)}
+table{background:rgba(255,255,255,.48)}
+th{background:rgba(223,239,252,.92);color:#1e4c73}
+td,th{padding:12px 13px}
+tbody tr:hover{background:rgba(201,231,251,.48)}
+.tag{background:rgba(224,239,255,.85);border:1px solid rgba(255,255,255,.95);color:#2a5791}
+.source-card{margin-top:17px}
+.source-card .source{line-height:1.9}
+@media(max-width:1250px){.layout{grid-template-columns:minmax(0,1fr) 290px}}
+@media(max-width:980px){
+  .side-nav{width:76px}.app-content{margin-left:76px}
+  .layout{grid-template-columns:1fr}
+}
+@media(max-width:650px){
+  .side-nav{width:100%;height:62px;border-radius:0 0 18px 18px;border:1px solid rgba(255,255,255,.15)}
+  .app-content{margin-left:0}
+  header{min-height:200px;padding:27px 17px 27px}
+  .hero-title{font-size:29px;max-width:78%}
+  .hero-art{width:43%;height:105px}
+  .hero-tags span{font-size:9px}
+  .kpis{gap:9px}
+  .card{min-height:116px;padding:14px 13px;border-radius:17px}
+  .value{font-size:27px}
+  .panel{border-radius:18px;padding:15px}
+  .chart-panel{min-height:295px}
+  .chart-wrap{height:215px}
+  #map{height:440px}
+  .toolbar a,.toolbar button{padding:9px 11px}
+}
+@media(prefers-reduced-motion:reduce){
+  .panel:hover,.side-nav a:hover,.toolbar a:hover,.toolbar button:hover{transform:none}
+}
+
 </style></head>
 <body>
 <div class="app-shell">
@@ -157,7 +311,7 @@ tbody tr:hover{background:rgba(216,237,252,.68)}
       <div class="hero-kicker">India · Electricity infrastructure</div>
       <h1 class="hero-title">India Power Plants <span>Dashboard</span></h1>
       <p class="hero-sub">Generating stations · Capacity · Fuel mix · State-wise inventory</p>
-      <div class="hero-tags"><span>LIVE MAP EXPERIENCE</span><span>FULL INVENTORY</span><span>DATA EXPLORER</span></div>
+      <div class="hero-tags"><span>LIQUID GLASS EDITION</span><span>FULL INVENTORY</span><span>LIVE DATA EXPLORER</span></div>
     </div>
     <div class="hero-art" aria-hidden="true">
       <svg viewBox="0 0 420 130" fill="none" xmlns="http://www.w3.org/2000/svg">
