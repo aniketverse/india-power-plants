@@ -1,6 +1,21 @@
 {
   "history": [
     {
+      "checked_at_utc": "2026-11-05T03:12:30.252454+00:00",
+      "sources_checked": {
+        "daily_stationwise": "https://npp.gov.in/public-reports/cea/daily/dgr/03-11-2026/dgr2-2026-11-03.xls"
+      },
+      "report_as_of": "2026-11-03",
+      "records_seen_in_reports": 540,
+      "new_records_added": 0,
+      "existing_records_refreshed": 540,
+      "new_records": [],
+      "notes": [
+        "Source is CEA/NPP Daily Generation Report 02 (station-wise).",
+        "All stations listed by the source are included regardless of sector or industry."
+      ]
+    },
+    {
       "checked_at_utc": "2026-11-04T03:11:16.237111+00:00",
       "sources_checked": {
         "daily_stationwise": "https://npp.gov.in/public-reports/cea/daily/dgr/02-11-2026/dgr2-2026-11-02.xls"
