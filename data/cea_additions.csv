@@ -1,541 +1,541 @@
 name,state,rawFuel,capacity,owner,year,lat,lon,source,source_as_of
-CHITRAVATHI PSP,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DAMODARAM SANJEEVAIAH TPS,Andhra Pradesh,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Dr. N.TATA RAO TPS,Andhra Pradesh,THERMAL,2560,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GAUTAMI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GODAVARI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GREL CCPP (Rajahmundry),Andhra Pradesh,THER (GT),768,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+CHITRAVATHI PSP,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DAMODARAM SANJEEVAIAH TPS,Andhra Pradesh,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Dr. N.TATA RAO TPS,Andhra Pradesh,THERMAL,2560,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GAUTAMI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GODAVARI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GREL CCPP (Rajahmundry),Andhra Pradesh,THER (GT),768,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 JEGURUPADU CCPP PH I,Andhra Pradesh,THER (GT),235.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-JEGURUPADU CCPP PH II,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KONASEEMA CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KONDAPALLI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KONDAPALLI EXTN CCPP,Andhra Pradesh,THER (GT),366,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KONDAPALLI ST-3 CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER SILERU EXTENSION HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER SILERU HPS,Andhra Pradesh,HYDRO,460,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LVS POWER DG,Andhra Pradesh,THER (DG),36.8,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MEENAKSHI ENERGY LTD,Andhra Pradesh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAGARJUN SGR RBC EXTN. HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAGARJUN SGR RBC HPS,Andhra Pradesh,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAGARJUN SGR TPD,Andhra Pradesh,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PAINAMPURAM TPP,Andhra Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PEDDAPURAM CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PINNAPURAM HPS,Andhra Pradesh,HYDRO,1680,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-POLAVARAM HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAYALASEEMA TPS,Andhra Pradesh,THERMAL,1650,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SGPL TPP,Andhra Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SIMHADRI,Andhra Pradesh,THERMAL,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SIMHAPURI TPS,Andhra Pradesh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SRISAILAM HPS,Andhra Pradesh,HYDRO,770,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UPPER SILERU HPS,Andhra Pradesh,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VEMAGIRI CCPP,Andhra Pradesh,THER (GT),370,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VIJJESWARAM CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VIZAG TPP,Andhra Pradesh,THERMAL,1040,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAMENG HPS,Arunachal Pradesh,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER SUBANSIRI HEP,Arunachal Pradesh,HYDRO,1250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARE,Arunachal Pradesh,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RANGANADI HPS,Arunachal Pradesh,HYDRO,405,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BONGAIGAON TPP,Assam,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KARBI LANGPI HPS,Assam,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KATHALGURI CCPP,Assam,THER (GT),291,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHANDONG HPS,Assam,HYDRO,46,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOPILI HPS,Assam,HYDRO,200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LAKWA GT,Assam,THER (GT),97.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LAKWA REPLACEMENT POWER PROJECT,Assam,THER (GT),69.755,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER KOPILI HPS,Assam,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAMRUP CCPP,Assam,THER (GT),124.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARAUNI TPS,Bihar,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARH STPS,Bihar,THERMAL,3300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BUXAR TPP,Bihar,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAHALGAON TPS,Bihar,THERMAL,2340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUZAFFARPUR TPS,Bihar,THERMAL,390,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NABINAGAR STPP,Bihar,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NABINAGAR TPP,Bihar,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED RAIGARH TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED RAIPUR TPP,Chhattisgarh,THERMAL,1370,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BALCO TPS,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BANDAKHAR TPP,Chhattisgarh,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARADARHA TPS,Chhattisgarh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHILAI TPS,Chhattisgarh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BINJKOTE TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHAKABURA TPP,Chhattisgarh,THERMAL,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DSPM TPS,Chhattisgarh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HASDEOBANGO HPS,Chhattisgarh,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JSW Mahanadi Power Company Limited,Chhattisgarh,THERMAL,1800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KASAIPALLI TPP,Chhattisgarh,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KATGHORA TPP,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KORBA STPS,Chhattisgarh,THERMAL,2600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KORBA-WEST TPS,Chhattisgarh,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LARA TPP,Chhattisgarh,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MARWA TPS,Chhattisgarh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAWAPARA TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-OP JINDAL TPS,Chhattisgarh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PATHADI STAGE II,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PATHADI TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RATIJA TPS,Chhattisgarh,THERMAL,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SALORA TPP,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SIPAT STPS,Chhattisgarh,THERMAL,2980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SVPL TPP,Chhattisgarh,THERMAL,63,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+JEGURUPADU CCPP PH II,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KONASEEMA CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KONDAPALLI CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KONDAPALLI EXTN CCPP,Andhra Pradesh,THER (GT),366,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KONDAPALLI ST-3 CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER SILERU EXTENSION HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER SILERU HPS,Andhra Pradesh,HYDRO,460,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LVS POWER DG,Andhra Pradesh,THER (DG),36.8,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MEENAKSHI ENERGY LTD,Andhra Pradesh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAGARJUN SGR RBC EXTN. HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAGARJUN SGR RBC HPS,Andhra Pradesh,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAGARJUN SGR TPD,Andhra Pradesh,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PAINAMPURAM TPP,Andhra Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PEDDAPURAM CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PINNAPURAM HPS,Andhra Pradesh,HYDRO,1680,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+POLAVARAM HPS,Andhra Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAYALASEEMA TPS,Andhra Pradesh,THERMAL,1650,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SGPL TPP,Andhra Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SIMHADRI,Andhra Pradesh,THERMAL,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SIMHAPURI TPS,Andhra Pradesh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SRISAILAM HPS,Andhra Pradesh,HYDRO,770,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UPPER SILERU HPS,Andhra Pradesh,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VEMAGIRI CCPP,Andhra Pradesh,THER (GT),370,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VIJJESWARAM CCPP,Andhra Pradesh,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VIZAG TPP,Andhra Pradesh,THERMAL,1040,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAMENG HPS,Arunachal Pradesh,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER SUBANSIRI HEP,Arunachal Pradesh,HYDRO,1250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARE,Arunachal Pradesh,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RANGANADI HPS,Arunachal Pradesh,HYDRO,405,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BONGAIGAON TPP,Assam,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KARBI LANGPI HPS,Assam,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KATHALGURI CCPP,Assam,THER (GT),291,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHANDONG HPS,Assam,HYDRO,46,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOPILI HPS,Assam,HYDRO,200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LAKWA GT,Assam,THER (GT),97.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LAKWA REPLACEMENT POWER PROJECT,Assam,THER (GT),69.755,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER KOPILI HPS,Assam,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAMRUP CCPP,Assam,THER (GT),124.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARAUNI TPS,Bihar,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARH STPS,Bihar,THERMAL,3300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BUXAR TPP,Bihar,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAHALGAON TPS,Bihar,THERMAL,2340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUZAFFARPUR TPS,Bihar,THERMAL,390,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NABINAGAR STPP,Bihar,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NABINAGAR TPP,Bihar,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED RAIGARH TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED RAIPUR TPP,Chhattisgarh,THERMAL,1370,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BALCO TPS,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BANDAKHAR TPP,Chhattisgarh,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARADARHA TPS,Chhattisgarh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHILAI TPS,Chhattisgarh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BINJKOTE TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHAKABURA TPP,Chhattisgarh,THERMAL,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DSPM TPS,Chhattisgarh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HASDEOBANGO HPS,Chhattisgarh,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JSW Mahanadi Power Company Limited,Chhattisgarh,THERMAL,1800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KASAIPALLI TPP,Chhattisgarh,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KATGHORA TPP,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KORBA STPS,Chhattisgarh,THERMAL,2600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KORBA-WEST TPS,Chhattisgarh,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LARA TPP,Chhattisgarh,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MARWA TPS,Chhattisgarh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAWAPARA TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+OP JINDAL TPS,Chhattisgarh,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PATHADI STAGE II,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PATHADI TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RATIJA TPS,Chhattisgarh,THERMAL,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SALORA TPP,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SIPAT STPS,Chhattisgarh,THERMAL,2980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SVPL TPP,Chhattisgarh,THERMAL,63,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 SWASTIK KORBA TPP,Chhattisgarh,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-TAMNAR TPP,Chhattisgarh,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UCHPINDA TPP,Chhattisgarh,THERMAL,1440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Vedanta Ltd Chhattisgarh TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-I.P.CCPP,Delhi,THER (GT),180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PRAGATI CCGT-III,Delhi,THER (GT),1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PRAGATI CCPP,Delhi,THER (GT),330.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RITHALA CCPP,Delhi,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GOA CCPP (Liq.),Goa,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED MUNDRA TPP - III,Gujarat,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AKRIMOTA LIG TPS,Gujarat,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARODA CCPP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAVNAGAR CFBC TPP,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DGEN MEGA CCPP,Gujarat,THER (GT),1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHUVARAN CCPP,Gujarat,THER (GT),594.72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+TAMNAR TPP,Chhattisgarh,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UCHPINDA TPP,Chhattisgarh,THERMAL,1440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Vedanta Ltd Chhattisgarh TPP,Chhattisgarh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+I.P.CCPP,Delhi,THER (GT),180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PRAGATI CCGT-III,Delhi,THER (GT),1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PRAGATI CCPP,Delhi,THER (GT),330.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RITHALA CCPP,Delhi,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GOA CCPP (Liq.),Goa,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED MUNDRA TPP - III,Gujarat,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AKRIMOTA LIG TPS,Gujarat,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARODA CCPP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAVNAGAR CFBC TPP,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DGEN MEGA CCPP,Gujarat,THER (GT),1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHUVARAN CCPP,Gujarat,THER (GT),594.72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 ESSAR CCPP,Gujarat,THER (GT),515,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-GANDHAR CCPP,Gujarat,THER (GT),657.39,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GANDHI NAGAR TPS,Gujarat,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GIPCL. GT IMP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HAZIRA CCPP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HAZIRA CCPP EXT,Gujarat,THER (GT),351,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KADANA HPS,Gujarat,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAKRAPARA,Gujarat,NUCLEAR,1840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAWAS CCPP,Gujarat,THER (GT),656.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTCH LIG. TPS,Gujarat,THERMAL,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUNDRA UMTPP,Gujarat,THERMAL,4000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PIPAVAV CCPP,Gujarat,THER (GT),702,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-S SAROVAR CHPH HPS,Gujarat,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-S SAROVAR RBPH HPS,Gujarat,HYDRO,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SABARMATI (D-F STATIONS),Gujarat,THERMAL,362,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SALAYA TPP,Gujarat,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SIKKA REP. TPS,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SUGEN CCPP,Gujarat,THER (GT),1147.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SURAT LIG. TPS,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UKAI HPS,Gujarat,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UKAI TPS,Gujarat,THERMAL,1110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UNOSUGEN CCPP,Gujarat,THER (GT),382.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UTRAN CCPP,Gujarat,THER (GT),374,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-WANAKBORI TPS,Gujarat,THERMAL,2270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-FARIDABAD CCPP,Haryana,THER (GT),431.59,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-INDIRA GANDHI STPP,Haryana,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHATMA GANDHI TPS,Haryana,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PANIPAT TPS,Haryana,THERMAL,710,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAJIV GANDHI TPS,Haryana,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-YAMUNA NAGAR TPS,Haryana,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ALLAIN DUHANGAN HPS,Himachal Pradesh,HYDRO,192,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BAIRA SIUL HPS,Himachal Pradesh,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BAJOLI HOLI HPS,Himachal Pradesh,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BASPA HPS,Himachal Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BASSI HPS,Himachal Pradesh,HYDRO,66,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAKRA LEFT HPS,Himachal Pradesh,HYDRO,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAKRA RIGHT HPS,Himachal Pradesh,HYDRO,785,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BUDHIL HPS,Himachal Pradesh,HYDRO,70,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHAMERA-I HPS,Himachal Pradesh,HYDRO,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHAMERA-II HPS,Himachal Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHAMERA-III HPS,Himachal Pradesh,HYDRO,231,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHANJU-I HPS,Himachal Pradesh,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DEHAR HPS,Himachal Pradesh,HYDRO,990,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Dhaulasidh HPS,Himachal Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GIRI BATA HPS,Himachal Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KARCHAM WANGTOO HPS,Himachal Pradesh,HYDRO,1045,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KASHANG INTEGRATED HEP,Himachal Pradesh,HYDRO,195,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOLDAM,Himachal Pradesh,HYDRO,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTEHR HPS,Himachal Pradesh,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LARJI HPS,Himachal Pradesh,HYDRO,126,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MALANA HPS,Himachal Pradesh,HYDRO,86,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MALANA-II HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NATHPA JHAKRI HPS,Himachal Pradesh,HYDRO,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARBATI-II HPS,Himachal Pradesh,HYDRO,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARBATI-III HPS,Himachal Pradesh,HYDRO,520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PONG HPS,Himachal Pradesh,HYDRO,396,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMPUR HPS,Himachal Pradesh,HYDRO,412.02,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SAINJ HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SANJAY HPS,Himachal Pradesh,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SAWRA KUDDU HPS,Himachal Pradesh,HYDRO,111,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHANAN HPS,Himachal Pradesh,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SORANG HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TIDONG HPS,Himachal Pradesh,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UHL-III HPS,Himachal Pradesh,HYDRO,99.99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BAGLIHAR HPS,Jammu and Kashmir,HYDRO,450,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BAGLIHAR II HPS,Jammu and Kashmir,HYDRO,450,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DULHASTI HPS,Jammu and Kashmir,HYDRO,390,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KIRU HPS,Jammu and Kashmir,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KISHANGANGA HPS,Jammu and Kashmir,HYDRO,330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER JHELUM HPS,Jammu and Kashmir,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PAKAL DUL HPS,Jammu and Kashmir,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PAMPORE GPS (Liq.),Jammu and Kashmir,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SALAL HPS,Jammu and Kashmir,HYDRO,690,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SEWA-II HPS,Jammu and Kashmir,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UPPER SINDH-II HPS,Jammu and Kashmir,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-URI-I HPS,Jammu and Kashmir,HYDRO,480,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-URI-II HPS,Jammu and Kashmir,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BOKARO TPS `A` EXP,Jharkhand,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHANDRAPURA(DVC) TPS,Jharkhand,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JOJOBERA TPS,Jharkhand,THERMAL,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KODARMA TPP,Jharkhand,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHADEV PRASAD STPP,Jharkhand,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAITHON RB TPP,Jharkhand,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAITRISHI USHA TPS,Jharkhand,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NORTH KARANPURA TPP,Jharkhand,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PANCHET HPS,Jharkhand,HYDRO,80,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PATRATU STPP,Jharkhand,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SUBERNREKHA-I HPS,Jharkhand,HYDRO,65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SUBERNREKHA-II HPS,Jharkhand,HYDRO,65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TENUGHAT TPS,Jharkhand,THERMAL,420,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED UDUPI TPP,Karnataka,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ALMATTI DPH HPS,Karnataka,HYDRO,290,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+GANDHAR CCPP,Gujarat,THER (GT),657.39,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GANDHI NAGAR TPS,Gujarat,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GIPCL. GT IMP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HAZIRA CCPP,Gujarat,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HAZIRA CCPP EXT,Gujarat,THER (GT),351,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KADANA HPS,Gujarat,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAKRAPARA,Gujarat,NUCLEAR,1840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAWAS CCPP,Gujarat,THER (GT),656.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTCH LIG. TPS,Gujarat,THERMAL,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUNDRA UMTPP,Gujarat,THERMAL,4000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PIPAVAV CCPP,Gujarat,THER (GT),702,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+S SAROVAR CHPH HPS,Gujarat,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+S SAROVAR RBPH HPS,Gujarat,HYDRO,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SABARMATI (D-F STATIONS),Gujarat,THERMAL,362,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SALAYA TPP,Gujarat,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SIKKA REP. TPS,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SUGEN CCPP,Gujarat,THER (GT),1147.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SURAT LIG. TPS,Gujarat,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UKAI HPS,Gujarat,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UKAI TPS,Gujarat,THERMAL,1110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UNOSUGEN CCPP,Gujarat,THER (GT),382.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UTRAN CCPP,Gujarat,THER (GT),374,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+WANAKBORI TPS,Gujarat,THERMAL,2270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+FARIDABAD CCPP,Haryana,THER (GT),431.59,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+INDIRA GANDHI STPP,Haryana,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHATMA GANDHI TPS,Haryana,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PANIPAT TPS,Haryana,THERMAL,710,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAJIV GANDHI TPS,Haryana,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+YAMUNA NAGAR TPS,Haryana,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ALLAIN DUHANGAN HPS,Himachal Pradesh,HYDRO,192,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BAIRA SIUL HPS,Himachal Pradesh,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BAJOLI HOLI HPS,Himachal Pradesh,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BASPA HPS,Himachal Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BASSI HPS,Himachal Pradesh,HYDRO,66,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAKRA LEFT HPS,Himachal Pradesh,HYDRO,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAKRA RIGHT HPS,Himachal Pradesh,HYDRO,785,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BUDHIL HPS,Himachal Pradesh,HYDRO,70,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHAMERA-I HPS,Himachal Pradesh,HYDRO,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHAMERA-II HPS,Himachal Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHAMERA-III HPS,Himachal Pradesh,HYDRO,231,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHANJU-I HPS,Himachal Pradesh,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DEHAR HPS,Himachal Pradesh,HYDRO,990,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Dhaulasidh HPS,Himachal Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GIRI BATA HPS,Himachal Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KARCHAM WANGTOO HPS,Himachal Pradesh,HYDRO,1045,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KASHANG INTEGRATED HEP,Himachal Pradesh,HYDRO,195,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOLDAM,Himachal Pradesh,HYDRO,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTEHR HPS,Himachal Pradesh,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LARJI HPS,Himachal Pradesh,HYDRO,126,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MALANA HPS,Himachal Pradesh,HYDRO,86,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MALANA-II HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NATHPA JHAKRI HPS,Himachal Pradesh,HYDRO,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARBATI-II HPS,Himachal Pradesh,HYDRO,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARBATI-III HPS,Himachal Pradesh,HYDRO,520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PONG HPS,Himachal Pradesh,HYDRO,396,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMPUR HPS,Himachal Pradesh,HYDRO,412.02,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SAINJ HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SANJAY HPS,Himachal Pradesh,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SAWRA KUDDU HPS,Himachal Pradesh,HYDRO,111,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHANAN HPS,Himachal Pradesh,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SORANG HPS,Himachal Pradesh,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TIDONG HPS,Himachal Pradesh,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UHL-III HPS,Himachal Pradesh,HYDRO,99.99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BAGLIHAR HPS,Jammu and Kashmir,HYDRO,450,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BAGLIHAR II HPS,Jammu and Kashmir,HYDRO,450,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DULHASTI HPS,Jammu and Kashmir,HYDRO,390,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KIRU HPS,Jammu and Kashmir,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KISHANGANGA HPS,Jammu and Kashmir,HYDRO,330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER JHELUM HPS,Jammu and Kashmir,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PAKAL DUL HPS,Jammu and Kashmir,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PAMPORE GPS (Liq.),Jammu and Kashmir,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SALAL HPS,Jammu and Kashmir,HYDRO,690,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SEWA-II HPS,Jammu and Kashmir,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UPPER SINDH-II HPS,Jammu and Kashmir,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+URI-I HPS,Jammu and Kashmir,HYDRO,480,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+URI-II HPS,Jammu and Kashmir,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BOKARO TPS `A` EXP,Jharkhand,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHANDRAPURA(DVC) TPS,Jharkhand,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JOJOBERA TPS,Jharkhand,THERMAL,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KODARMA TPP,Jharkhand,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHADEV PRASAD STPP,Jharkhand,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAITHON RB TPP,Jharkhand,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAITRISHI USHA TPS,Jharkhand,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NORTH KARANPURA TPP,Jharkhand,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PANCHET HPS,Jharkhand,HYDRO,80,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PATRATU STPP,Jharkhand,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SUBERNREKHA-I HPS,Jharkhand,HYDRO,65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SUBERNREKHA-II HPS,Jharkhand,HYDRO,65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TENUGHAT TPS,Jharkhand,THERMAL,420,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED UDUPI TPP,Karnataka,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ALMATTI DPH HPS,Karnataka,HYDRO,290,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 BELLARY DG,Karnataka,THER (DG),25.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-BELLARY TPS,Karnataka,THERMAL,1700,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHADRA HPS,Karnataka,HYDRO,26,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GERUSUPPA HPS,Karnataka,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GHAT PRABHA HPS,Karnataka,HYDRO,32,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HAMPI HPS,Karnataka,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JOG HPS,Karnataka,HYDRO,139.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KADRA HPS,Karnataka,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAIGA,Karnataka,NUCLEAR,880,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KALINADI HPS,Karnataka,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KALINADI SUPA HPS,Karnataka,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KODASALI HPS,Karnataka,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUDGI STPP,Karnataka,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LIGANAMAKKI HPS,Karnataka,HYDRO,55,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUNIRABAD HPS,Karnataka,HYDRO,28,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAICHUR TPS,Karnataka,THERMAL,1720,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHARAVATHI HPS,Karnataka,HYDRO,1035,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SIVASAMUNDRUM HPS,Karnataka,HYDRO,42,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-T B DAM HPS,Karnataka,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TORANGALLU TPS(SBU-I),Karnataka,THERMAL,260,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TORANGALLU TPS(SBU-II),Karnataka,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VARAHI HPS,Karnataka,HYDRO,460,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-YELAHANKA CCPP,Karnataka,THER (GT),370.05,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-YERMARUS TPP,Karnataka,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+BELLARY TPS,Karnataka,THERMAL,1700,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHADRA HPS,Karnataka,HYDRO,26,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GERUSUPPA HPS,Karnataka,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GHAT PRABHA HPS,Karnataka,HYDRO,32,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HAMPI HPS,Karnataka,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JOG HPS,Karnataka,HYDRO,139.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KADRA HPS,Karnataka,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAIGA,Karnataka,NUCLEAR,880,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KALINADI HPS,Karnataka,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KALINADI SUPA HPS,Karnataka,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KODASALI HPS,Karnataka,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUDGI STPP,Karnataka,THERMAL,2400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LIGANAMAKKI HPS,Karnataka,HYDRO,55,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUNIRABAD HPS,Karnataka,HYDRO,28,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAICHUR TPS,Karnataka,THERMAL,1720,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHARAVATHI HPS,Karnataka,HYDRO,1035,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SIVASAMUNDRUM HPS,Karnataka,HYDRO,42,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+T B DAM HPS,Karnataka,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TORANGALLU TPS(SBU-I),Karnataka,THERMAL,260,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TORANGALLU TPS(SBU-II),Karnataka,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VARAHI HPS,Karnataka,HYDRO,460,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+YELAHANKA CCPP,Karnataka,THER (GT),370.05,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+YERMARUS TPP,Karnataka,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 BRAMHAPURAM DG,Kerala,THER (DG),63.96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-COCHIN CCPP (Liq.),Kerala,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-IDAMALAYAR HPS,Kerala,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-IDUKKI HPS,Kerala,HYDRO,780,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAKKAD HPS,Kerala,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOZHIKODE DG,Kerala,THER (DG),96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTTIYADI ADDL EXTN,Kerala,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTTIYADI EXTN HPS,Kerala,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTTIYADI HPS,Kerala,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LAKSHADWEEP DG,Kerala,THER (DG),26.83,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER PERIYAR HPS,Kerala,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NARIAMANGLAM HPS,Kerala,HYDRO,52.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PALLIVASAL EXTN HPS,Kerala,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PALLIVASAL HPS,Kerala,HYDRO,37.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PANNIAR HPS,Kerala,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PORINGALKUTTU HPS,Kerala,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-R. GANDHI CCPP (Liq.),Kerala,THER (GT),359.58,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SABARIGIRI HPS,Kerala,HYDRO,340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SENGULAM HPS,Kerala,HYDRO,48,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHOLAYAR HPS,Kerala,HYDRO,54,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-THOTTIYAR HPS,Kerala,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHUTAK HPS,Ladakh,HYDRO,44,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NIMMO BAZGO HPS,Ladakh,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AMARKANTAK EXT TPS,Madhya Pradesh,THERMAL,210,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANUPPUR TPP,Madhya Pradesh,THERMAL,1250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BANSAGAR TONS-I HPS,Madhya Pradesh,HYDRO,315,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BANSAGAR-II HPS,Madhya Pradesh,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BANSAGAR-III HPS,Madhya Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARGI HPS,Madhya Pradesh,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BINA TPS,Madhya Pradesh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GADARWARA TPP,Madhya Pradesh,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GANDHI SAGAR HPS,Madhya Pradesh,HYDRO,115,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GANDHI SAGAR PSP,Madhya Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-INDIRA SAGAR HPS,Madhya Pradesh,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHARGONE STPP,Madhya Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MADHIKHERA HPS,Madhya Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHAN TPP,Madhya Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHESHWAR HPS,Madhya Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NIGRI TPP,Madhya Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NIWARI TPP,Madhya Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-OMKARESHWAR HPS,Madhya Pradesh,HYDRO,520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAJGHAT HPS,Madhya Pradesh,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SANJAY GANDHI TPS,Madhya Pradesh,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SASAN UMTPP,Madhya Pradesh,THERMAL,3960,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SATPURA TPS,Madhya Pradesh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SEIONI TPP,Madhya Pradesh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHREE SINGAJI TPP,Madhya Pradesh,THERMAL,2520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VINDHYACHAL STPS,Madhya Pradesh,THERMAL,4760,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED TIRODA TPP,Maharashtra,THERMAL,3300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AMRAVATI TPS,Maharashtra,THERMAL,1350,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BELA TPS,Maharashtra,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHANDARDHARA HPS ST-II,Maharashtra,HYDRO,34,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHIRA HPS,Maharashtra,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHIRA PSS HPS,Maharashtra,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHIRA TAIL RACE HPS,Maharashtra,HYDRO,80,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHIVPURI HPS,Maharashtra,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHUSAWAL TPS,Maharashtra,THERMAL,1870,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BUTIBORI TPP,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHANDRAPUR(MAHARASHTRA) STPS,Maharashtra,THERMAL,2920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DAHANU TPS,Maharashtra,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHARIWAL TPP,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+COCHIN CCPP (Liq.),Kerala,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+IDAMALAYAR HPS,Kerala,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+IDUKKI HPS,Kerala,HYDRO,780,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAKKAD HPS,Kerala,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOZHIKODE DG,Kerala,THER (DG),96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTTIYADI ADDL EXTN,Kerala,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTTIYADI EXTN HPS,Kerala,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTTIYADI HPS,Kerala,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LAKSHADWEEP DG,Kerala,THER (DG),26.83,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER PERIYAR HPS,Kerala,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NARIAMANGLAM HPS,Kerala,HYDRO,52.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PALLIVASAL EXTN HPS,Kerala,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PALLIVASAL HPS,Kerala,HYDRO,37.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PANNIAR HPS,Kerala,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PORINGALKUTTU HPS,Kerala,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+R. GANDHI CCPP (Liq.),Kerala,THER (GT),359.58,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SABARIGIRI HPS,Kerala,HYDRO,340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SENGULAM HPS,Kerala,HYDRO,48,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHOLAYAR HPS,Kerala,HYDRO,54,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+THOTTIYAR HPS,Kerala,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHUTAK HPS,Ladakh,HYDRO,44,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NIMMO BAZGO HPS,Ladakh,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AMARKANTAK EXT TPS,Madhya Pradesh,THERMAL,210,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANUPPUR TPP,Madhya Pradesh,THERMAL,1250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BANSAGAR TONS-I HPS,Madhya Pradesh,HYDRO,315,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BANSAGAR-II HPS,Madhya Pradesh,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BANSAGAR-III HPS,Madhya Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARGI HPS,Madhya Pradesh,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BINA TPS,Madhya Pradesh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GADARWARA TPP,Madhya Pradesh,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GANDHI SAGAR HPS,Madhya Pradesh,HYDRO,115,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GANDHI SAGAR PSP,Madhya Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+INDIRA SAGAR HPS,Madhya Pradesh,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHARGONE STPP,Madhya Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MADHIKHERA HPS,Madhya Pradesh,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHAN TPP,Madhya Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHESHWAR HPS,Madhya Pradesh,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NIGRI TPP,Madhya Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NIWARI TPP,Madhya Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+OMKARESHWAR HPS,Madhya Pradesh,HYDRO,520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAJGHAT HPS,Madhya Pradesh,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SANJAY GANDHI TPS,Madhya Pradesh,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SASAN UMTPP,Madhya Pradesh,THERMAL,3960,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SATPURA TPS,Madhya Pradesh,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SEIONI TPP,Madhya Pradesh,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHREE SINGAJI TPP,Madhya Pradesh,THERMAL,2520,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VINDHYACHAL STPS,Madhya Pradesh,THERMAL,4760,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED TIRODA TPP,Maharashtra,THERMAL,3300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AMRAVATI TPS,Maharashtra,THERMAL,1350,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BELA TPS,Maharashtra,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHANDARDHARA HPS ST-II,Maharashtra,HYDRO,34,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHIRA HPS,Maharashtra,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHIRA PSS HPS,Maharashtra,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHIRA TAIL RACE HPS,Maharashtra,HYDRO,80,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHIVPURI HPS,Maharashtra,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHUSAWAL TPS,Maharashtra,THERMAL,1870,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BUTIBORI TPP,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHANDRAPUR(MAHARASHTRA) STPS,Maharashtra,THERMAL,2920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DAHANU TPS,Maharashtra,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHARIWAL TPP,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 GEPL TPP Ph-I,Maharashtra,THERMAL,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-GHATGHAR PSS HPS,Maharashtra,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GMR WARORA TPS,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JSW RATNAGIRI TPP,Maharashtra,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHAPARKHEDA TPS,Maharashtra,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHOPOLI HPS,Maharashtra,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KORADI TPS,Maharashtra,THERMAL,2190,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOYNA DPH HPS,Maharashtra,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOYNA-III HPS,Maharashtra,HYDRO,320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOYNA-IV HPS,Maharashtra,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LANCO VIDARBHA TPP,Maharashtra,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MANGAON CCPP,Maharashtra,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAUDA TPS,Maharashtra,THERMAL,2320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MIHAN TPS,Maharashtra,THERMAL,246.01,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NASIK (P) TPS,Maharashtra,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NASIK TPS,Maharashtra,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARAS TPS,Maharashtra,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARLI TPS,Maharashtra,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PENCH HPS,Maharashtra,HYDRO,160,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RATNAGIRI CCPP,Maharashtra,THER (GT),1967.08,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHIRPUR TPP,Maharashtra,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SOLAPUR STPS,Maharashtra,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TARAPUR,Maharashtra,NUCLEAR,1400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TILLARI HPS,Maharashtra,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TROMBAY CCPP,Maharashtra,THER (GT),180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TROMBAY TPS,Maharashtra,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-URAN CCPP,Maharashtra,THER (GT),672,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VAITARNA HPS,Maharashtra,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-WARDHA WARORA TPP,Maharashtra,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LEIMAKHONG DG,Manipur,THER (DG),36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOKTAK HPS,Manipur,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KYRDEMKULAI HPS,Meghalaya,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MYNTDU(LESHKA) St-1 HPS,Meghalaya,HYDRO,126,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEW UMTRU HPS,Meghalaya,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UMIAM HPS ST-I,Meghalaya,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UMIAM HPS ST-IV,Meghalaya,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TUIRIAL HPS,Mizoram,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DOYANG HPS,Nagaland,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BALIMELA HPS,Odisha,HYDRO,510,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHIPLIMA HPS,Odisha,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DARLIPALI STPS,Odisha,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DERANG TPP,Odisha,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HIRAKUD HPS,Odisha,HYDRO,287.8,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-IB VALLEY TPS,Odisha,THERMAL,1740,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JSW Energy Utkal Limited,Odisha,THERMAL,700,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAMALANGA TPS,Odisha,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LANCO BABANDH TPP,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MACHKUND HPS,Odisha,HYDRO,114.75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Maadurga Thermal Power Company Ltd.,Odisha,THERMAL,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Malibrahamani TPP,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RENGALI HPS,Odisha,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ROURKELA PP-II EXPANSION,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TALCHER STPS,Odisha,THERMAL,3000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UPPER INDRAVATI HPS,Odisha,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UPPER KOLAB HPS,Odisha,HYDRO,320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VEDANTA TPP,Odisha,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KARAIKAL CCPP,Puducherry,THER (GT),32.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANANDPUR SAHIB-I HPS,Punjab,HYDRO,67,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANANDPUR SAHIB-II HPS,Punjab,HYDRO,67,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GANGUWAL HPS,Punjab,HYDRO,77.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GH TPS (LEH.MOH.),Punjab,THERMAL,920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GOINDWAL SAHIB TPP,Punjab,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOTLA HPS,Punjab,HYDRO,77.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUKERIAN-I HPS,Punjab,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUKERIAN-II HPS,Punjab,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUKERIAN-III HPS,Punjab,HYDRO,58.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUKERIAN-IV HPS,Punjab,HYDRO,58.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAJPURA TPP,Punjab,THERMAL,1400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RANJIT SAGAR HPS,Punjab,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ROPAR TPS,Punjab,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHAHPURKUNDI HPS,Punjab,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TALWANDI SABO TPP,Punjab,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ADANI POWER LIMITED KAWAI TPP,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANTA CCPP,Rajasthan,THER (GT),419.33,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARSINGSAR LIGNITE,Rajasthan,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHHABRA-I PH-1 TPP,Rajasthan,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHHABRA-I PH-2 TPP,Rajasthan,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHHABRA-II TPP,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DAE (RAJASTHAN),Rajasthan,NUCLEAR,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHOLPUR CCPP,Rajasthan,THER (GT),330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+GHATGHAR PSS HPS,Maharashtra,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GMR WARORA TPS,Maharashtra,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JSW RATNAGIRI TPP,Maharashtra,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHAPARKHEDA TPS,Maharashtra,THERMAL,1340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHOPOLI HPS,Maharashtra,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KORADI TPS,Maharashtra,THERMAL,2190,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOYNA DPH HPS,Maharashtra,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOYNA-III HPS,Maharashtra,HYDRO,320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOYNA-IV HPS,Maharashtra,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LANCO VIDARBHA TPP,Maharashtra,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MANGAON CCPP,Maharashtra,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAUDA TPS,Maharashtra,THERMAL,2320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MIHAN TPS,Maharashtra,THERMAL,246.01,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NASIK (P) TPS,Maharashtra,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NASIK TPS,Maharashtra,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARAS TPS,Maharashtra,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARLI TPS,Maharashtra,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PENCH HPS,Maharashtra,HYDRO,160,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RATNAGIRI CCPP,Maharashtra,THER (GT),1967.08,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHIRPUR TPP,Maharashtra,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SOLAPUR STPS,Maharashtra,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TARAPUR,Maharashtra,NUCLEAR,1400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TILLARI HPS,Maharashtra,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TROMBAY CCPP,Maharashtra,THER (GT),180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TROMBAY TPS,Maharashtra,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+URAN CCPP,Maharashtra,THER (GT),672,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VAITARNA HPS,Maharashtra,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+WARDHA WARORA TPP,Maharashtra,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LEIMAKHONG DG,Manipur,THER (DG),36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOKTAK HPS,Manipur,HYDRO,105,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KYRDEMKULAI HPS,Meghalaya,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MYNTDU(LESHKA) St-1 HPS,Meghalaya,HYDRO,126,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEW UMTRU HPS,Meghalaya,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UMIAM HPS ST-I,Meghalaya,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UMIAM HPS ST-IV,Meghalaya,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TUIRIAL HPS,Mizoram,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DOYANG HPS,Nagaland,HYDRO,75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BALIMELA HPS,Odisha,HYDRO,510,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHIPLIMA HPS,Odisha,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DARLIPALI STPS,Odisha,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DERANG TPP,Odisha,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HIRAKUD HPS,Odisha,HYDRO,287.8,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+IB VALLEY TPS,Odisha,THERMAL,1740,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JSW Energy Utkal Limited,Odisha,THERMAL,700,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAMALANGA TPS,Odisha,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LANCO BABANDH TPP,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MACHKUND HPS,Odisha,HYDRO,114.75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Maadurga Thermal Power Company Ltd.,Odisha,THERMAL,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Malibrahamani TPP,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RENGALI HPS,Odisha,HYDRO,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ROURKELA PP-II EXPANSION,Odisha,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TALCHER STPS,Odisha,THERMAL,3000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UPPER INDRAVATI HPS,Odisha,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UPPER KOLAB HPS,Odisha,HYDRO,320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VEDANTA TPP,Odisha,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KARAIKAL CCPP,Puducherry,THER (GT),32.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANANDPUR SAHIB-I HPS,Punjab,HYDRO,67,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANANDPUR SAHIB-II HPS,Punjab,HYDRO,67,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GANGUWAL HPS,Punjab,HYDRO,77.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GH TPS (LEH.MOH.),Punjab,THERMAL,920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GOINDWAL SAHIB TPP,Punjab,THERMAL,540,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOTLA HPS,Punjab,HYDRO,77.65,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUKERIAN-I HPS,Punjab,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUKERIAN-II HPS,Punjab,HYDRO,45,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUKERIAN-III HPS,Punjab,HYDRO,58.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUKERIAN-IV HPS,Punjab,HYDRO,58.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAJPURA TPP,Punjab,THERMAL,1400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RANJIT SAGAR HPS,Punjab,HYDRO,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ROPAR TPS,Punjab,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHAHPURKUNDI HPS,Punjab,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TALWANDI SABO TPP,Punjab,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ADANI POWER LIMITED KAWAI TPP,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANTA CCPP,Rajasthan,THER (GT),419.33,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARSINGSAR LIGNITE,Rajasthan,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHHABRA-I PH-1 TPP,Rajasthan,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHHABRA-I PH-2 TPP,Rajasthan,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHHABRA-II TPP,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DAE (RAJASTHAN),Rajasthan,NUCLEAR,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHOLPUR CCPP,Rajasthan,THER (GT),330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 GIRAL TPS,Rajasthan,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-JALIPA KAPURDI TPP,Rajasthan,THERMAL,1080,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JAWAHAR SAGAR HPS,Rajasthan,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KALISINDH TPS,Rajasthan,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOTA TPS,Rajasthan,THERMAL,1240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHI BAJAJ-I HPS,Rajasthan,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAHI BAJAJ-II HPS,Rajasthan,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-R P SAGAR HPS,Rajasthan,HYDRO,173.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAJASTHAN A.P.S.,Rajasthan,NUCLEAR,1780,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMGARH CCPP,Rajasthan,THER (GT),270.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHREE CEMENT LTD TPS,Rajasthan,THERMAL,344,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SURATGARH STPS,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SURATGARH TPS,Rajasthan,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHUZACHEN HPS,Sikkim,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DIKCHU HPS,Sikkim,HYDRO,96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JORETHANG LOOP,Sikkim,HYDRO,96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RANGIT HPS,Sikkim,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RANGIT-IV HPS,Sikkim,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RONGNICHU HPS,Sikkim,HYDRO,113,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TASHIDING HPS,Sikkim,HYDRO,97,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEESTA V HPS,Sikkim,HYDRO,510,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEESTA-III HPS,Sikkim,HYDRO,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ALIYAR HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+JALIPA KAPURDI TPP,Rajasthan,THERMAL,1080,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JAWAHAR SAGAR HPS,Rajasthan,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KALISINDH TPS,Rajasthan,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOTA TPS,Rajasthan,THERMAL,1240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHI BAJAJ-I HPS,Rajasthan,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAHI BAJAJ-II HPS,Rajasthan,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+R P SAGAR HPS,Rajasthan,HYDRO,173.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAJASTHAN A.P.S.,Rajasthan,NUCLEAR,1780,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMGARH CCPP,Rajasthan,THER (GT),270.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHREE CEMENT LTD TPS,Rajasthan,THERMAL,344,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SURATGARH STPS,Rajasthan,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SURATGARH TPS,Rajasthan,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHUZACHEN HPS,Sikkim,HYDRO,110,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DIKCHU HPS,Sikkim,HYDRO,96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JORETHANG LOOP,Sikkim,HYDRO,96,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RANGIT HPS,Sikkim,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RANGIT-IV HPS,Sikkim,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RONGNICHU HPS,Sikkim,HYDRO,113,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TASHIDING HPS,Sikkim,HYDRO,97,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEESTA V HPS,Sikkim,HYDRO,510,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEESTA-III HPS,Sikkim,HYDRO,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ALIYAR HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 BASIN BRIDGE GT (Liq.),Tamil Nadu,THER (GT),120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-BHAVINI PFBR,Tamil Nadu,NUCLEAR,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAWANI BARRAGE-II HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAWANI BARRAGE-III HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHAWANI KATTAL,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ENNORE SCTPP,Tamil Nadu,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ITPCL TPP,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KADAMPARI HPS,Tamil Nadu,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KARUPPUR CCPP,Tamil Nadu,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KODAYAR-I HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KODAYAR-II HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOVIKALPAL CCPP,Tamil Nadu,THER (GT),107.88,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUDANKULAM,Tamil Nadu,NUCLEAR,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH PSP,Tamil Nadu,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH-I HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH-II HPS,Tamil Nadu,HYDRO,175,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH-III HPS,Tamil Nadu,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH-IV HPS,Tamil Nadu,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDAH-V HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUTTALAM CCPP,Tamil Nadu,THER (GT),100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER METTUR-I HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER METTUR-II HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER METTUR-III HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER METTUR-IV HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MADRAS A.P.S.,Tamil Nadu,NUCLEAR,440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-METTUR DAM HPS,Tamil Nadu,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-METTUR TPS,Tamil Nadu,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-METTUR TPS-II,Tamil Nadu,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-METTUR TUNNEL HPS,Tamil Nadu,HYDRO,200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MOYAR HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MUTHIARA TPP,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEYVELI ( EXT) TPS,Tamil Nadu,THERMAL,420,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEYVELI NEW TPP,Tamil Nadu,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEYVELI TPS(Z),Tamil Nadu,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEYVELI TPS-II,Tamil Nadu,THERMAL,1470,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NEYVELI TPS-II EXP,Tamil Nadu,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NORTH CHENNAI TPS STAGE 1,Tamil Nadu,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NORTH CHENNAI TPS STAGE 2,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NORTH CHENNAI TPS STAGE 3,Tamil Nadu,THERMAL,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NTPL TUTICORIN TPP,Tamil Nadu,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Nagai TPP,Tamil Nadu,THERMAL,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-OPG Power Generation Private Limited,Tamil Nadu,THERMAL,414,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-P.NALLUR CCPP,Tamil Nadu,THER (GT),330.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PAPANASAM HPS,Tamil Nadu,HYDRO,32,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARSON`S VALLEY HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PERIYAR HPS,Tamil Nadu,HYDRO,168,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PYKARA HPS,Tamil Nadu,HYDRO,59.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PYKARA ULTMATE HPS,Tamil Nadu,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+BHAVINI PFBR,Tamil Nadu,NUCLEAR,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAWANI BARRAGE-II HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAWANI BARRAGE-III HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHAWANI KATTAL,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ENNORE SCTPP,Tamil Nadu,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ITPCL TPP,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KADAMPARI HPS,Tamil Nadu,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KARUPPUR CCPP,Tamil Nadu,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KODAYAR-I HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KODAYAR-II HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOVIKALPAL CCPP,Tamil Nadu,THER (GT),107.88,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUDANKULAM,Tamil Nadu,NUCLEAR,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH PSP,Tamil Nadu,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH-I HPS,Tamil Nadu,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH-II HPS,Tamil Nadu,HYDRO,175,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH-III HPS,Tamil Nadu,HYDRO,180,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH-IV HPS,Tamil Nadu,HYDRO,100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDAH-V HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUTTALAM CCPP,Tamil Nadu,THER (GT),100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER METTUR-I HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER METTUR-II HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER METTUR-III HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER METTUR-IV HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MADRAS A.P.S.,Tamil Nadu,NUCLEAR,440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+METTUR DAM HPS,Tamil Nadu,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+METTUR TPS,Tamil Nadu,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+METTUR TPS-II,Tamil Nadu,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+METTUR TUNNEL HPS,Tamil Nadu,HYDRO,200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MOYAR HPS,Tamil Nadu,HYDRO,40,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MUTHIARA TPP,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEYVELI ( EXT) TPS,Tamil Nadu,THERMAL,420,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEYVELI NEW TPP,Tamil Nadu,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEYVELI TPS(Z),Tamil Nadu,THERMAL,250,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEYVELI TPS-II,Tamil Nadu,THERMAL,1470,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NEYVELI TPS-II EXP,Tamil Nadu,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NORTH CHENNAI TPS STAGE 1,Tamil Nadu,THERMAL,630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NORTH CHENNAI TPS STAGE 2,Tamil Nadu,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NORTH CHENNAI TPS STAGE 3,Tamil Nadu,THERMAL,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NTPL TUTICORIN TPP,Tamil Nadu,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Nagai TPP,Tamil Nadu,THERMAL,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+OPG Power Generation Private Limited,Tamil Nadu,THERMAL,414,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+P.NALLUR CCPP,Tamil Nadu,THER (GT),330.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PAPANASAM HPS,Tamil Nadu,HYDRO,32,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARSON`S VALLEY HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PERIYAR HPS,Tamil Nadu,HYDRO,168,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PYKARA HPS,Tamil Nadu,HYDRO,59.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PYKARA ULTMATE HPS,Tamil Nadu,HYDRO,150,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
 SAMALPATTI DG,Tamil Nadu,THER (DG),105.7,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
 SAMAYANALLUR DG,Tamil Nadu,THER (DG),106.001,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-11
-SARKARPATHY HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHOLAYAR HPS (TN),Tamil Nadu,HYDRO,84,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SURULIYAR HPS,Tamil Nadu,HYDRO,35,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TCP Limited,Tamil Nadu,THERMAL,63.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TUTICORIN (P) TPP,Tamil Nadu,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TUTICORIN TPP ST-IV,Tamil Nadu,THERMAL,525,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TUTICORIN TPS,Tamil Nadu,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-Tulsyan NEC Limited,Tamil Nadu,THERMAL,70,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UDANGUDI TPP,Tamil Nadu,THERMAL,660,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VALANTARVY CCPP,Tamil Nadu,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VALLUR TPP,Tamil Nadu,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VALUTHUR CCPP,Tamil Nadu,THER (GT),186.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AND. NICOBAR DG,Telangana,THER (DG),57.52,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AND. NICOBAR Pvt. DG,Telangana,THER (DG),35.19,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BHADRADRI TPP,Telangana,THERMAL,1080,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KAKATIYA TPS,Telangana,THERMAL,1100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOTHAGUDEM TPS (NEW),Telangana,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOTHAGUDEM TPS (STAGE-7),Telangana,THERMAL,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LOWER JURALA HPS,Telangana,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAGARJUN SGR HPS,Telangana,HYDRO,815.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAGARJUN SGR LBC HPS,Telangana,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-POCHAMPAD HPS,Telangana,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PRIYADARSHNI JURALA HPS,Telangana,HYDRO,234,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PULICHINTALA HPS,Telangana,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMAGUNDEM STPS,Telangana,THERMAL,2600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMAGUNDEM-B TPS,Telangana,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SINGARENI TPP,Telangana,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SRISAILAM LB HPS,Telangana,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TELANGANA STPP PH-1,Telangana,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-YADADRI TPS,Telangana,THERMAL,3200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AGARTALA GT,Tripura,THER (GT),135,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARAMURA GT,Tripura,THER (GT),42,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHUKHA,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KURICHU,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MANGDECHHU,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MONARCHAK CCPP,Tripura,THER (GT),101,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PUNATSANGCHHU-II,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ROKHIA GT,Tripura,THER (GT),63,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TALA,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TRIPURA CCPP,Tripura,THER (GT),726.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANPARA C TPS,Uttar Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ANPARA TPS,Uttar Pradesh,THERMAL,2630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-AURAIYA CCPP,Uttar Pradesh,THER (GT),663.36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BARKHERA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DADRI (NCTPP),Uttar Pradesh,THERMAL,1840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DADRI CCPP,Uttar Pradesh,THER (GT),829.78,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GHATAMPUR TPP,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HARDUAGANJ TPS,Uttar Pradesh,THERMAL,1265,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JAWAHARPUR STPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHAMBARKHERA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHARA HPS,Uttar Pradesh,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHURJA TPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KUNDARKI TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-LALITPUR TPS,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAQSOODPUR TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MATATILA HPS,Uttar Pradesh,HYDRO,30.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MEJA STPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NARORA A.P.S.,Uttar Pradesh,NUCLEAR,440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-OBRA HPS,Uttar Pradesh,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-OBRA TPS,Uttar Pradesh,THERMAL,2320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PANKI TPS EXT,Uttar Pradesh,THERMAL,660,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PARICHHA TPS,Uttar Pradesh,THERMAL,920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PRAYAGRAJ TPP,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RIHAND HPS,Uttar Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RIHAND STPS,Uttar Pradesh,THERMAL,3000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-ROSA TPP Ph-I,Uttar Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SINGRAULI STPS,Uttar Pradesh,THERMAL,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TANDA TPS,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UNCHAHAR TPS,Uttar Pradesh,THERMAL,1550,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-UTRAULA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BETA CCPP,Uttarakhand,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHIBRO (YAMUNA) HPS,Uttarakhand,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-CHILLA HPS,Uttarakhand,HYDRO,144,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHAKRANI HPS,Uttarakhand,HYDRO,33.75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHALIPUR HPS,Uttarakhand,HYDRO,51,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DHAULI GANGA HPS,Uttarakhand,HYDRO,280,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-GAMA CCPP,Uttarakhand,THER (GT),225,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHATIMA HPS,Uttarakhand,HYDRO,41.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KHODRI HPS,Uttarakhand,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOTESHWAR HPS,Uttarakhand,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KULHAL HPS,Uttarakhand,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MANERI BHALI-I HPS,Uttarakhand,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MANERI BHALI-II HPS,Uttarakhand,HYDRO,304,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-NAITWAR MORI HPS,Uttarakhand,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMGANGA HPS,Uttarakhand,HYDRO,198,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SHRINAGAR HPS,Uttarakhand,HYDRO,330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SINGOLI BHATWARI HPS,Uttarakhand,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SRAVANTHI CCPP,Uttarakhand,THER (GT),439,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TANAKPUR HPS,Uttarakhand,HYDRO,94.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TAPOVAN VISHNUGAD HPS,Uttarakhand,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEHRI PSP,Uttarakhand,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEHRI ST-1 HPS,Uttarakhand,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VISHNU PRAYAG HPS,Uttarakhand,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VISHNUGAD PIPALKOTI HPS,Uttarakhand,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-VYASI HPS,Uttarakhand,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BAKRESWAR TPS,West Bengal,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BANDEL TPS,West Bengal,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-BUDGE BUDGE TPS,West Bengal,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-D.P.L. TPS,West Bengal,THERMAL,550,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-DURGAPUR STEEL TPS,West Bengal,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-FARAKKA STPS,West Bengal,THERMAL,2100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HALDIA GT (Liq.),West Bengal,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HALDIA TPP,West Bengal,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-HIRANMAYE TPP,West Bengal,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-JALDHAKA HPS ST-I,West Bengal,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KASBA GT (Liq.),West Bengal,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-KOLAGHAT TPS,West Bengal,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MAITHON HPS,West Bengal,HYDRO,63.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-MEJIA TPS,West Bengal,THERMAL,2340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-PURULIA PSS HPS,West Bengal,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAGHUNATHPUR TPP,West Bengal,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-RAMMAM HPS,West Bengal,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SAGARDIGHI TPS,West Bengal,THERMAL,2260,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SANTALDIH TPS,West Bengal,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-SOUTHERN REPL. TPS,West Bengal,THERMAL,135,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEESTA LOW DAM-III HPS,West Bengal,HYDRO,132,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TEESTA LOW DAM-IV HPS,West Bengal,HYDRO,160,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
-TITAGARH TPS,West Bengal,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-25
+SARKARPATHY HPS,Tamil Nadu,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHOLAYAR HPS (TN),Tamil Nadu,HYDRO,84,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SURULIYAR HPS,Tamil Nadu,HYDRO,35,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TCP Limited,Tamil Nadu,THERMAL,63.5,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TUTICORIN (P) TPP,Tamil Nadu,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TUTICORIN TPP ST-IV,Tamil Nadu,THERMAL,525,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TUTICORIN TPS,Tamil Nadu,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+Tulsyan NEC Limited,Tamil Nadu,THERMAL,70,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UDANGUDI TPP,Tamil Nadu,THERMAL,660,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VALANTARVY CCPP,Tamil Nadu,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VALLUR TPP,Tamil Nadu,THERMAL,1500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VALUTHUR CCPP,Tamil Nadu,THER (GT),186.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AND. NICOBAR DG,Telangana,THER (DG),57.52,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AND. NICOBAR Pvt. DG,Telangana,THER (DG),35.19,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BHADRADRI TPP,Telangana,THERMAL,1080,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KAKATIYA TPS,Telangana,THERMAL,1100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOTHAGUDEM TPS (NEW),Telangana,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOTHAGUDEM TPS (STAGE-7),Telangana,THERMAL,800,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LOWER JURALA HPS,Telangana,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAGARJUN SGR HPS,Telangana,HYDRO,815.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAGARJUN SGR LBC HPS,Telangana,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+POCHAMPAD HPS,Telangana,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PRIYADARSHNI JURALA HPS,Telangana,HYDRO,234,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PULICHINTALA HPS,Telangana,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMAGUNDEM STPS,Telangana,THERMAL,2600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMAGUNDEM-B TPS,Telangana,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SINGARENI TPP,Telangana,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SRISAILAM LB HPS,Telangana,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TELANGANA STPP PH-1,Telangana,THERMAL,1600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+YADADRI TPS,Telangana,THERMAL,3200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AGARTALA GT,Tripura,THER (GT),135,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARAMURA GT,Tripura,THER (GT),42,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHUKHA,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KURICHU,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MANGDECHHU,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MONARCHAK CCPP,Tripura,THER (GT),101,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PUNATSANGCHHU-II,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ROKHIA GT,Tripura,THER (GT),63,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TALA,Tripura,0,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TRIPURA CCPP,Tripura,THER (GT),726.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANPARA C TPS,Uttar Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ANPARA TPS,Uttar Pradesh,THERMAL,2630,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+AURAIYA CCPP,Uttar Pradesh,THER (GT),663.36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BARKHERA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DADRI (NCTPP),Uttar Pradesh,THERMAL,1840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DADRI CCPP,Uttar Pradesh,THER (GT),829.78,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GHATAMPUR TPP,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HARDUAGANJ TPS,Uttar Pradesh,THERMAL,1265,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JAWAHARPUR STPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHAMBARKHERA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHARA HPS,Uttar Pradesh,HYDRO,72,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHURJA TPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KUNDARKI TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+LALITPUR TPS,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAQSOODPUR TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MATATILA HPS,Uttar Pradesh,HYDRO,30.6,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MEJA STPP,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NARORA A.P.S.,Uttar Pradesh,NUCLEAR,440,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+OBRA HPS,Uttar Pradesh,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+OBRA TPS,Uttar Pradesh,THERMAL,2320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PANKI TPS EXT,Uttar Pradesh,THERMAL,660,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PARICHHA TPS,Uttar Pradesh,THERMAL,920,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PRAYAGRAJ TPP,Uttar Pradesh,THERMAL,1980,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RIHAND HPS,Uttar Pradesh,HYDRO,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RIHAND STPS,Uttar Pradesh,THERMAL,3000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+ROSA TPP Ph-I,Uttar Pradesh,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SINGRAULI STPS,Uttar Pradesh,THERMAL,2000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TANDA TPS,Uttar Pradesh,THERMAL,1320,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UNCHAHAR TPS,Uttar Pradesh,THERMAL,1550,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+UTRAULA TPS,Uttar Pradesh,THERMAL,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BETA CCPP,Uttarakhand,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHIBRO (YAMUNA) HPS,Uttarakhand,HYDRO,240,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+CHILLA HPS,Uttarakhand,HYDRO,144,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHAKRANI HPS,Uttarakhand,HYDRO,33.75,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHALIPUR HPS,Uttarakhand,HYDRO,51,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DHAULI GANGA HPS,Uttarakhand,HYDRO,280,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+GAMA CCPP,Uttarakhand,THER (GT),225,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHATIMA HPS,Uttarakhand,HYDRO,41.4,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KHODRI HPS,Uttarakhand,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOTESHWAR HPS,Uttarakhand,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KULHAL HPS,Uttarakhand,HYDRO,30,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MANERI BHALI-I HPS,Uttarakhand,HYDRO,90,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MANERI BHALI-II HPS,Uttarakhand,HYDRO,304,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+NAITWAR MORI HPS,Uttarakhand,HYDRO,60,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMGANGA HPS,Uttarakhand,HYDRO,198,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SHRINAGAR HPS,Uttarakhand,HYDRO,330,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SINGOLI BHATWARI HPS,Uttarakhand,HYDRO,99,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SRAVANTHI CCPP,Uttarakhand,THER (GT),439,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TANAKPUR HPS,Uttarakhand,HYDRO,94.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TAPOVAN VISHNUGAD HPS,Uttarakhand,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEHRI PSP,Uttarakhand,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEHRI ST-1 HPS,Uttarakhand,HYDRO,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VISHNU PRAYAG HPS,Uttarakhand,HYDRO,400,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VISHNUGAD PIPALKOTI HPS,Uttarakhand,HYDRO,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+VYASI HPS,Uttarakhand,HYDRO,120,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BAKRESWAR TPS,West Bengal,THERMAL,1050,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BANDEL TPS,West Bengal,THERMAL,270,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+BUDGE BUDGE TPS,West Bengal,THERMAL,750,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+D.P.L. TPS,West Bengal,THERMAL,550,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+DURGAPUR STEEL TPS,West Bengal,THERMAL,1000,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+FARAKKA STPS,West Bengal,THERMAL,2100,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HALDIA GT (Liq.),West Bengal,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HALDIA TPP,West Bengal,THERMAL,600,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+HIRANMAYE TPP,West Bengal,THERMAL,300,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+JALDHAKA HPS ST-I,West Bengal,HYDRO,36,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KASBA GT (Liq.),West Bengal,THER (GT),0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+KOLAGHAT TPS,West Bengal,THERMAL,840,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MAITHON HPS,West Bengal,HYDRO,63.2,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+MEJIA TPS,West Bengal,THERMAL,2340,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+PURULIA PSS HPS,West Bengal,HYDRO,900,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAGHUNATHPUR TPP,West Bengal,THERMAL,1200,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+RAMMAM HPS,West Bengal,HYDRO,50,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SAGARDIGHI TPS,West Bengal,THERMAL,2260,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SANTALDIH TPS,West Bengal,THERMAL,500,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+SOUTHERN REPL. TPS,West Bengal,THERMAL,135,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEESTA LOW DAM-III HPS,West Bengal,HYDRO,132,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TEESTA LOW DAM-IV HPS,West Bengal,HYDRO,160,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
+TITAGARH TPS,West Bengal,THERMAL,0,,,,,CEA/NPP Daily Station-wise Generation Report (DGR-2),2026-11-26
